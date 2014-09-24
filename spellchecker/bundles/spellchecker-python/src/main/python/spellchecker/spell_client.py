@@ -17,6 +17,7 @@ for its existence in the dictionary.
 from pelix.ipopo.decorators import ComponentFactory, Provides, Property, \
     Validate, Invalidate, Requires
 from pelix.utilities import to_str
+import pelix.remote
 
 import logging
 # Basic HTTP server
@@ -37,7 +38,8 @@ _logger = logging.getLogger("spellchecker.spell_client")
 @Property('_path', 'pelix.http.path', "/spellchecker")
 # Consume a single Spell Checker service
 @Requires("_checker", "spell_checker_service")
-
+# Reject the export the servlet specification
+@Property('_reject', pelix.remote.PROP_EXPORT_REJECT, ['pelix.http.servlet'])
 class SpellClient(object):
     """
     A component that provides a shell command (spell.spell), using a
@@ -78,7 +80,7 @@ class SpellClient(object):
         result = ""
         try:
             paragraph = data['paragraph'][0]
-            language = data['language'][0]     
+            language = data['language'][0]
             language = language.upper()
             misspelled_words = self._checker.check(paragraph, language)
             if misspelled_words is None:
@@ -88,10 +90,10 @@ class SpellClient(object):
                     result = 'All words are well spelled !'
                 else:
                     result = "The misspelled words are: " + " ".join(misspelled_words)
-        except (KeyError, IndexError):            
+        except (KeyError, IndexError):
             result = "Fill the language and paragraph inputs!"
 
-        
+
         content = """<html>
     <head>
     <title>SpellChecker</title>
@@ -129,7 +131,7 @@ class SpellClient(object):
         Between this call and the call to invalidate, the _spell_checker member
         will point to a valid spell checker service.
         """
-        _logger.info("SpellClient validated")        
+        _logger.info("SpellClient validated")
 
 
     @Invalidate
