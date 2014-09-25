@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Copyright 2014 isandlaTech (http://isandlatech.com/)
+	Copyright 2012-2014 isandlaTech (http://isandlatech.com/)
 
 	Licensed under the Apache License, Version 2.0 (the "License"); you may 
 	not use this file
@@ -19,14 +19,31 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.cohorte.demos</groupId>
-		<artifactId>spellchecker-demo</artifactId>
+		<artifactId>demo-august-2013-bundles</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>spellchecker-demo-bundles</artifactId>
+	<artifactId>demo.july2012.python</artifactId>
 	<version>1.0.0</version>
-	<packaging>pom</packaging>
+	<packaging>cohorte-bundle</packaging>
 
-	<modules>
-		<module>spellchecker-python</module>
-	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.cohorte.plugins</groupId>
+				<artifactId>cohorte-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<language>python</language>
+					<package>
+						<skip_package_setup>true</skip_package_setup>
+						<skip_package_source>false</skip_package_source>
+					</package>
+					<test>
+						<skip_test>true</skip_test>
+					</test>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

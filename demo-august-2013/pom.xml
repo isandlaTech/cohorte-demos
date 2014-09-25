@@ -19,14 +19,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.cohorte.demos</groupId>
-		<artifactId>spellchecker-demo</artifactId>
+		<artifactId>cohorte-demos</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>spellchecker-demo-bundles</artifactId>
+	<artifactId>demo-august-2013</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>spellchecker-python</module>
+		<module>bundles</module>
+		<module>platforms</module>
 	</modules>
 </project>
