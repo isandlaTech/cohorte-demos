@@ -1,0 +1,6 @@
+!bin/
+!conf/
+repo/
+!repo/README
+var/
+target/
