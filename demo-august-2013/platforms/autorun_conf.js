@@ -1,36 +1,62 @@
 {
-	"name" : "spellchecker-demo-app",
+	"name" : "demo-august2013-cohorte",
 	"root" : {
-		"name" : "spellchecker-demo",
+		"name" : "demo-august2013",
 		"components" : [ {
 			/**
-			 * EN Dictionary
+			 * Python sensor
 			 */
-			"name" : "dictionary_en_python",
-			"factory" : "spell_dictionary_en_factory",
-			"language" : "python"
+			"name" : "temper-python-python",
+			"factory" : "demo-temperature-fake-factory",
+			// Force isolation
+			"isolate" : "temper.python",
+			"properties" : {
+				"temper.value.min" : -5,
+				"temper.value.max" : 45
+			}
 		}, {
 			/**
-			 * FR Dictionary
+			 * Raspberry Pi sensor
 			 */
-			"name" : "dictionary_fr_python",
-			"factory" : "spell_dictionary_fr_factory",
-			"language" : "python"
+			"name" : "temper-python-raspi",
+			"factory" : "demo-temperature-fake-factory",
+			// Force placement
+			"isolate" : "temper.raspi",
+			"node" : "raspberry"
 		}, {
 			/**
-			 * Spell Checker
+			 * Java sensor
 			 */
-			"name" : "spell_checker_python",
-			"factory" : "spell_checker_factory",
-			"language" : "python"
+			"name" : "temper-java",
+			"factory" : "java-fake-temp-factory",
+			"isolate" : "temper.java"
 		}, {
 			/**
-			 * Spell Client
+			 * Aggregator component
 			 */
-			"name" : "spell_client_python",
-			"factory" : "spell_client_factory",
+			"name" : "aggregator",
+			"factory" : "demo-sensor-aggregator-factory",
 			"language" : "python",
-			"isolate" : "client-isolate"
+			"isolate" : "stratus.aggregator",
+			"properties" : {
+				"poll.delta" : 1
+			}
+		}, {
+			/**
+			 * Aggregator web UI
+			 */
+			"name" : "aggregator-UI",
+			"factory" : "demo-sensor-aggregator-ui-factory",
+			"language" : "python",
+			// Force the isolate name: allows to force the HTTP port in
+			// the isolate configuration
+			"isolate" : "aggregator.ui",
+			"properties" : {
+				"servlet.path" : "/sensors"
+			},
+			"wires" : {
+				"_aggregator" : "aggregator"
+			}
 		} ]
 	}
 }
