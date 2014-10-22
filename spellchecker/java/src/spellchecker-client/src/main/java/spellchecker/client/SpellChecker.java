@@ -68,7 +68,7 @@ public class SpellChecker extends HttpServlet {
 		html += "<hr/>";
 		html += "</body></html>";
 		
-		resp.getWriter().write("Hello World");
+		resp.getWriter().write(html);
 	}
 	
 }
