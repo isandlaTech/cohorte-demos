@@ -18,17 +18,53 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cohorte.demos</groupId>
-	<artifactId>getting-started-tutorial</artifactId>
+	<artifactId>hello</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	
-	<packaging>pom</packaging>
+	<packaging>bundle</packaging>
 
 	<name>COHORTE Project ::: Tutorials :: Getting Started </name>
 
 	<url>http://cohorte.github.io/docs/1.x/tutorials/getting-started</url>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.ipojo.annotations</artifactId>
+			<version>1.12.0</version>
+			<scope>provided</scope>
+		</dependency>   
+	</dependencies>
+
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.0.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>component_D</Bundle-SymbolicName>
+						<Export-Package>
+							hello
+						</Export-Package>
+						<Private-Package>
+							hello.impl
+						</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-ipojo-plugin</artifactId>
+				<version>1.12.0</version>
+				<executions>
+					<execution>
+						<goals><goal>ipojo-bundle</goal></goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.4.1</version>
