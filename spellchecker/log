@@ -1,0 +1,213 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] spellchecker-services
+[INFO] spellchecker-en-dictionary
+[INFO] spellchecker-fr-dictionary
+[INFO] spellchecker-checker
+[INFO] spellchecker-client
+[INFO] spellchecker-java-demo
+[INFO] COHORTE Project ::: Tutorials :: Spellchecker
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-services 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-services ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-services/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spellchecker-services ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spellchecker-services ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-services/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spellchecker-services ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-services/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spellchecker-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spellchecker-services ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.0.1:bundle (default-bundle) @ spellchecker-services ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-en-dictionary 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-en-dictionary ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-en-dictionary/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spellchecker-en-dictionary ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-en-dictionary/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spellchecker-en-dictionary ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-en-dictionary/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spellchecker-en-dictionary ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-en-dictionary/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spellchecker-en-dictionary ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spellchecker-en-dictionary ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.0.1:bundle (default-bundle) @ spellchecker-en-dictionary ---
+[INFO] 
+[INFO] --- maven-ipojo-plugin:1.12.0:ipojo-bundle (default) @ spellchecker-en-dictionary ---
+[INFO] Start bundle manipulation
+[INFO] No metadata file found - trying to use only annotations
+[INFO] Input Bundle File : /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-en-dictionary/target/spellchecker-en-dictionary-1.0.0-SNAPSHOT.jar
+[INFO] Apache Felix iPOJO Manipulator - 1.12.0
+[INFO] Bundle manipulation - SUCCESS
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-fr-dictionary 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-fr-dictionary ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-fr-dictionary/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spellchecker-fr-dictionary ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-fr-dictionary/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spellchecker-fr-dictionary ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-fr-dictionary/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spellchecker-fr-dictionary ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-fr-dictionary/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spellchecker-fr-dictionary ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spellchecker-fr-dictionary ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.0.1:bundle (default-bundle) @ spellchecker-fr-dictionary ---
+[INFO] 
+[INFO] --- maven-ipojo-plugin:1.12.0:ipojo-bundle (default) @ spellchecker-fr-dictionary ---
+[INFO] Start bundle manipulation
+[INFO] No metadata file found - trying to use only annotations
+[INFO] Input Bundle File : /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-fr-dictionary/target/spellchecker-fr-dictionary-1.0.0-SNAPSHOT.jar
+[INFO] Apache Felix iPOJO Manipulator - 1.12.0
+[INFO] Bundle manipulation - SUCCESS
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-checker 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-checker ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-checker/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spellchecker-checker ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-checker/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spellchecker-checker ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-checker/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spellchecker-checker ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-checker/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spellchecker-checker ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spellchecker-checker ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.0.1:bundle (default-bundle) @ spellchecker-checker ---
+[INFO] 
+[INFO] --- maven-ipojo-plugin:1.12.0:ipojo-bundle (default) @ spellchecker-checker ---
+[INFO] Start bundle manipulation
+[INFO] No metadata file found - trying to use only annotations
+[INFO] Input Bundle File : /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-checker/target/spellchecker-checker-1.0.0-SNAPSHOT.jar
+[INFO] Apache Felix iPOJO Manipulator - 1.12.0
+[INFO] Bundle manipulation - SUCCESS
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-client 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-client ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-client/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spellchecker-client ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ spellchecker-client ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-client/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spellchecker-client ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ spellchecker-client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ spellchecker-client ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.0.1:bundle (default-bundle) @ spellchecker-client ---
+[INFO] 
+[INFO] --- maven-ipojo-plugin:1.12.0:ipojo-bundle (default) @ spellchecker-client ---
+[INFO] Start bundle manipulation
+[INFO] No metadata file found - trying to use only annotations
+[INFO] Input Bundle File : /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/java/src/spellchecker-client/target/spellchecker-client-1.0.0-SNAPSHOT.jar
+[INFO] Apache Felix iPOJO Manipulator - 1.12.0
+[INFO] Bundle manipulation - SUCCESS
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spellchecker-java-demo 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-java-demo ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building COHORTE Project ::: Tutorials :: Spellchecker 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spellchecker-demo ---
+[INFO] Deleting /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/target
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4.1:single (assembly) @ spellchecker-demo ---
+[INFO] Reading assembly descriptor: assembly.xml
+[INFO] Building zip: /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/spellchecker/target/spellchecker-demo-1.0.0-SNAPSHOT-distribution.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] spellchecker-services .............................. SUCCESS [  1.602 s]
+[INFO] spellchecker-en-dictionary ......................... SUCCESS [  0.436 s]
+[INFO] spellchecker-fr-dictionary ......................... SUCCESS [  0.124 s]
+[INFO] spellchecker-checker ............................... SUCCESS [  0.139 s]
+[INFO] spellchecker-client ................................ SUCCESS [  0.178 s]
+[INFO] spellchecker-java-demo ............................. SUCCESS [  0.021 s]
+[INFO] COHORTE Project ::: Tutorials :: Spellchecker ...... SUCCESS [  0.529 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.440 s
+[INFO] Finished at: 2014-10-24T17:41:53+02:00
+[INFO] Final Memory: 23M/274M
+[INFO] ------------------------------------------------------------------------

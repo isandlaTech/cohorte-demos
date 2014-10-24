@@ -12,9 +12,9 @@ Component B.
 from pelix.ipopo.decorators import ComponentFactory, Provides, \
     Validate, Invalidate, Requires, BindField, UnbindField
 
-@ComponentFactory("component_B_factory")
+@ComponentFactory("component_b_factory")
 @Provides("cohorte.demos.hello.HelloService")
-class ComponentB(object):
+class Component_b(object):
 
     def say_hello(self):
         return "Bonjour, je suis un composant B!"

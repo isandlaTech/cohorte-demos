@@ -45,7 +45,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-SymbolicName>component_D</Bundle-SymbolicName>
+						<Bundle-SymbolicName>hello_java</Bundle-SymbolicName>
 						<Export-Package>
 							cohorte.demos.hello
 						</Export-Package>

@@ -20,11 +20,114 @@
 	</parent>
 	<artifactId>spellchecker-demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>java</module>
-	</modules>
+	<name>COHORTE Project ::: Tutorials :: Spellchecker </name>
 
+	<url>http://cohorte.github.io/docs/1.x/tutorials/getting-started</url>
+
+	<profiles>
+		<profile>
+			<id>build</id>
+			<modules>
+				<module>java</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>deploy</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.4.1</version>
+						<executions>
+							<execution>
+								<id>assembly</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>							
+									<descriptors>
+										<descriptor>assembly.xml</descriptor>
+									</descriptors>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>				
+			</build>
+		</profile>
+	</profiles>
+	
+	<build>
+		<extensions>
+			<!-- Enabling the use of FTP -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+	</build>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>isandlaTech</name>
+		<url>http://isandlatech.com</url>
+	</organization>
+
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/isandlaTech/cohorte-demos/issues</url>
+	</issueManagement>
+
+	<repositories>
+		<repository>
+			<id>isandlatech.snapshots</id>
+			<name>isandlaTech Snapshot Repository</name>
+			<url>http://repo.isandlatech.com/maven/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>isandlatech.releases</id>
+			<name>isandlaTech Releases Repository</name>
+			<url>http://repo.isandlatech.com/maven/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>isandlatech</id>
+			<name>isandlaTech Releases Repository</name>
+			<url>ftp://isandlatech.com/maven/releases</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>isandlatech</id>
+			<name>isandlaTech Snapshots Repository</name>
+			<url>ftp://isandlatech.com/maven/snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>

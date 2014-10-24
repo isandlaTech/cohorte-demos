@@ -16,9 +16,9 @@ from pelix.ipopo.decorators import ComponentFactory, Provides, \
 import logging
 import re
 
-@ComponentFactory("component_A_factory")
+@ComponentFactory("component_a_factory")
 @Provides("cohorte.demos.hello.HelloService")
-class ComponentA(object):
+class Component_a(object):
 
     def say_hello(self):
         return "Hi, I am component A!"
