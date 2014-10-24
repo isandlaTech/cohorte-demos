@@ -13,7 +13,7 @@ from pelix.ipopo.decorators import ComponentFactory, Provides, \
     Validate, Invalidate, Requires, BindField, UnbindField
 
 @ComponentFactory("component_B_factory")
-@Provides("cohorte.demos.HelloService")
+@Provides("cohorte.demos.hello.HelloService")
 class ComponentB(object):
 
     def say_hello(self):

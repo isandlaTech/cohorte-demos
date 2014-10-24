@@ -1,9 +1,9 @@
-package hello.impl;
+package cohorte.demos.hello.impl;
 
 import org.apache.felix.ipojo.annotations.Component;
 import org.apache.felix.ipojo.annotations.Provides;
 
-import hello.HelloService;
+import cohorte.demos.hello.HelloService;
 
 @Component(name="component_D_factory")
 @Provides
@@ -12,3 +12,4 @@ public class ComponentD implements HelloService {
 		return "Marhaba, ana composant D ma3moul bi Java!";
 	}
 }
+

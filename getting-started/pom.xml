@@ -47,10 +47,10 @@
 					<instructions>
 						<Bundle-SymbolicName>component_D</Bundle-SymbolicName>
 						<Export-Package>
-							hello
+							cohorte.demos.hello
 						</Export-Package>
 						<Private-Package>
-							hello.impl
+							cohorte.demos.hello.impl
 						</Private-Package>
 					</instructions>
 				</configuration>

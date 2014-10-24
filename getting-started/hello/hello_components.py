@@ -21,7 +21,7 @@ import logging
 @ComponentFactory("hello_components_factory")
 @Provides(specifications='pelix.http.servlet')
 @Property('_path', 'pelix.http.path', "/hello")
-@Requires("_components", "cohorte.demos.HelloService", aggregate=True, optional=True)
+@Requires("_components", "cohorte.demos.hello.HelloService", aggregate=True, optional=True)
 # Reject the export the servlet specification
 @Property('_reject', pelix.remote.PROP_EXPORT_REJECT, ['pelix.http.servlet'])
 class HelloComponents(object):
