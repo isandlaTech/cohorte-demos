@@ -17,7 +17,7 @@ import logging
 import re
 
 @ComponentFactory("component_a_factory")
-@Provides("cohorte.demos.hello.HelloService")
+@Provides("java:/cohorte.demos.hello.HelloService")
 class Component_a(object):
 
     def say_hello(self):
