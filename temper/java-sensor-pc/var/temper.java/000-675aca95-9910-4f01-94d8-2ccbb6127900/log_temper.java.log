@@ -1,0 +1,4 @@
+2014-10-28 17:49:59,220:INFO    :root                :MainThread     : Root log configured. (boot.configure_logger() @454)
+2014-10-28 17:49:59,223:WARNING :cohorte.boot.looper.cocoa:MainThread     : PyObjCTools is not installed on this system. GUI applications will likely freeze. (You've been warned) (cocoa.<module>() @53)
+2014-10-28 17:49:59,297:INFO    :pelix.shell.core    :framework      : Shell services registered (core.start() @1395)
+2014-10-28 17:49:59,330:INFO    :pelix.shell.remote  :framework      : RemoteShell validated on port: 58487 (remote.validate() @370)

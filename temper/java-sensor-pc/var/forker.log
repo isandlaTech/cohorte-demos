@@ -1,0 +1,552 @@
+2014-10-28 17:49:41,697:INFO    :root                :MainThread     : Root log configured. (boot.configure_logger() @454)
+2014-10-28 17:49:41,715:INFO    :cohorte.boot.loaders.forker:MainThread     : Loading a forker with the following properties:
+* Home.....: /Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT
+* Base.....: /Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc
+* Node UID.: 4748d1c1-c680-4f47-b2cd-303b771bb346
+* Node Name: java-sensor-pc
+* UID......: 5a4089b0-6003-4474-88ed-08f94e1f0595 (forker.load() @227)
+2014-10-28 17:49:41,881:INFO    :pelix.shell.core    :MainThread     : Shell services registered (core.start() @1395)
+2014-10-28 17:49:41,920:INFO    :pelix-http-service  :MainThread     : Starting HTTP server: [::]:1501 ... (basic.log() @707)
+2014-10-28 17:49:41,926:INFO    :pelix-http-service  :MainThread     : HTTP server started: [::]:1501 (basic.log() @707)
+2014-10-28 17:49:41,928:INFO    :pelix.shell.remote  :MainThread     : RemoteShell validated on port: 1502 (remote.validate() @370)
+2014-10-28 17:49:41,930:WARNING :herald.core         :Herald-HTTP-Servlet-Bound: No peer in group all (core.fire_group() @661)
+2014-10-28 17:49:41,930:INFO    :cohorte.debug.servlet:MainThread     : Debug servlet Ready (servlet.validate() @339)
+2014-10-28 17:49:41,935:INFO    :webadmin.webadmin   :MainThread     : Webadmin validated (webadmin.validate() @654)
+2014-10-28 17:49:41,935:INFO    :webadmin.webadmin   :MainThread     : Bound to /admin (webadmin.bound_to() @668)
+2014-10-28 17:49:41,936:INFO    :cohorte.monitor.status:MainThread     : Monitor status validated (status.validate() @186)
+2014-10-28 17:49:42,436:INFO    :cohorte.monitor.basic:Thread-2       : Monitor core validated (basic.validate() @430)
+2014-10-28 17:49:42,463:ERROR   :cohorte.config.reader:Thread-2       : Can't read file 'autorun_isolates.js': File not found: 'autorun_isolates.js' (base: conf) (reader.load_file() @477)
+2014-10-28 17:49:44,096:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldDiscovery: malformed node or string: <_ast.Attribute object at 0x10e8030f0> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,109:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Factory name 'FACTORY_MONITOR' is unknown (MonitorBotWrapper) (ipopo.visit_ClassDef() @102)
+2014-10-28 17:49:44,227:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class RegistryServlet: malformed node or string: <_ast.Attribute object at 0x10e80cc50> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,284:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class MulticastDiscovery: malformed node or string: <_ast.Attribute object at 0x10e808128> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,298:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Factory name 'FACTORY_DISCOVERY_MULTICAST' is unknown (MulticastHeartbeat) (ipopo.visit_ClassDef() @102)
+2014-10-28 17:49:44,310:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class IPopoRemoteShell: malformed node or string: <_ast.Attribute object at 0x10e821b00> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,338:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HttpService: malformed node or string: <_ast.Attribute object at 0x10e83da20> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,478:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class JsonRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10a329cc0> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,478:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class JsonRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e815d30> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,485:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class EventAdmin: malformed node or string: <_ast.Attribute object at 0x10e817d30> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,528:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class JabsorbRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e808470> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,528:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class JabsorbRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e82e6d8> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,579:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class MqttRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e828550> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,579:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class MqttRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e82bf60> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,581:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Factory name 'FACTORY_TRANSPORT' is unknown (XmppTransport) (ipopo.visit_ClassDef() @102)
+2014-10-28 17:49:44,649:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class MqttDiscovery: malformed node or string: <_ast.Attribute object at 0x10e8302e8> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,652:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e82cf28> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,652:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e821ef0> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,662:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e805780> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,663:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e839400> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,671:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class MqttEventAdminBridge: malformed node or string: <_ast.Attribute object at 0x1079f50b8> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,734:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Factory name 'FACTORY_SERVLET' is unknown (HeraldServlet) (ipopo.visit_ClassDef() @102)
+2014-10-28 17:49:44,793:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e96be10> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,793:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class HeraldRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e8020b8> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,844:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class IPopoXMPPShell: malformed node or string: <_ast.Attribute object at 0x10e82c4a8> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,848:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class XmlRpcServiceExporter: malformed node or string: <_ast.Attribute object at 0x10e96bc50> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,848:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class XmlRpcServiceImporter: malformed node or string: <_ast.Attribute object at 0x10e82cd30> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,873:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class EventAdminPrinter: malformed node or string: <_ast.Attribute object at 0x10dfec400> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,883:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class ZeroconfDiscovery: malformed node or string: <_ast.Attribute object at 0x10e8172b0> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:44,905:WARNING :cohorte.repositories.python.ipopo:iPOPO-repository-loader: Invalid factory name for class JsonPersistence: malformed node or string: <_ast.Attribute object at 0x10e837710> (ipopo.visit_ClassDef() @110)
+2014-10-28 17:49:59,070:INFO    :cohorte.composer.node.top_store:HeraldNotify-3 : Storing top composition 3a278fa0-84ee-4049-ad26-79f3ca486df1 (top_store.store() @114)
+2014-10-28 17:49:59,077:INFO    :cohorte.composer.node.criteria.distance.history:HeraldNotify-1 : Using neutral candidate for JS (history.vote() @215)
+2014-10-28 17:49:59,077:INFO    :cohorte.composer.node.history:HeraldNotify-1 : Node composer stored in history:
+{'temper.java': ('JS',)} (history.store() @120)
+2014-10-28 17:50:09,079:WARNING :cohorte.composer.node.composer:Thread-3       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:09,090:INFO    :cohorte.composer.node.criteria.distance.history:Thread-3       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:09,090:WARNING :cohorte.vote.core   :Thread-3       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:50:19,096:WARNING :cohorte.composer.node.composer:Thread-4       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:19,104:INFO    :cohorte.composer.node.criteria.distance.history:Thread-4       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:19,104:WARNING :cohorte.vote.core   :Thread-4       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:50:29,109:WARNING :cohorte.composer.node.composer:Thread-5       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:29,117:INFO    :cohorte.composer.node.criteria.distance.history:Thread-5       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:29,117:WARNING :cohorte.vote.core   :Thread-5       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:50:39,122:WARNING :cohorte.composer.node.composer:Thread-6       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:39,129:INFO    :cohorte.composer.node.criteria.distance.history:Thread-6       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:39,130:WARNING :cohorte.vote.core   :Thread-6       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:50:49,132:WARNING :cohorte.composer.node.composer:Thread-7       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:49,139:INFO    :cohorte.composer.node.criteria.distance.history:Thread-7       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:49,140:WARNING :cohorte.vote.core   :Thread-7       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:50:59,145:WARNING :cohorte.composer.node.composer:Thread-8       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:50:59,152:INFO    :cohorte.composer.node.criteria.distance.history:Thread-8       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:50:59,152:WARNING :cohorte.vote.core   :Thread-8       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:51:09,157:WARNING :cohorte.composer.node.composer:Thread-9       : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:51:09,167:INFO    :cohorte.composer.node.criteria.distance.history:Thread-9       : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:51:09,168:WARNING :cohorte.vote.core   :Thread-9       : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:51:19,171:WARNING :cohorte.composer.node.composer:Thread-10      : !! Node Composer starts redistribution !!! (composer._redistribute() @325)
+2014-10-28 17:51:19,179:INFO    :cohorte.composer.node.criteria.distance.history:Thread-10      : Vote preference for JS: temper.java (history.vote() @207)
+2014-10-28 17:51:19,179:WARNING :cohorte.vote.core   :Thread-10      : Coup d'état by temper.java java (core.vote() @158)
+2014-10-28 17:51:25,066:WARNING :cohorte.forker.basic:Pelix-Shell-TextConsole: Sending 'forker stopping' signal. (basic._send_stopping() @341)
+2014-10-28 17:51:25,077:ERROR   :herald-http         :herald-http-3  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,077:ERROR   :herald-http         :herald-http-4  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,077:ERROR   :herald-http         :herald-http-1  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,081:WARNING :herald.core         :Pelix-Shell-TextConsole: Some peers haven't been notified: aggregation (67b3903c-8155-4b6a-a876-3b4769826c77), temper.python (524e82f2-7718-4f84-9a47-bb05866ecced), web.interface (f59f7a31-8205-4161-8147-32f55922107e) (core.fire_group() @713)
+2014-10-28 17:51:25,097:ERROR   :herald-http         :herald-http-5  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,097:ERROR   :herald-http         :herald-http-3  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,097:ERROR   :herald-http         :herald-http-4  : Error executing post: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused')) (threadpool.__run() @341)
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 362, in send
+    timeout=timeout
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 559, in urlopen
+    _pool=self, _stacktrace=stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 516, in urlopen
+    body=body, headers=headers)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connectionpool.py", line 308, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1090, in request
+    self._send_request(method, url, body, headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 1086, in endheaders
+    self._send_output(message_body)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 924, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/http/client.py", line 859, in send
+    self.connect()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 146, in connect
+    conn = self._new_conn()
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/connection.py", line 125, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 87, in create_connection
+    raise err
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 338, in __run
+    future.execute(method, args, kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/pelix/threadpool.py", line 120, in execute
+    result = method(*args, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 500, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(61, 'Connection refused'))
+2014-10-28 17:51:25,098:WARNING :herald.core         :Pelix-Shell-TextConsole: Some peers haven't been notified: aggregation (67b3903c-8155-4b6a-a876-3b4769826c77), temper.python (524e82f2-7718-4f84-9a47-bb05866ecced), web.interface (f59f7a31-8205-4161-8147-32f55922107e) (core.fire_group() @713)
+2014-10-28 17:51:25,102:INFO    :cohorte.monitor.basic:Pelix-Shell-TextConsole: Monitor core invalidated (basic.invalidate() @453)
+2014-10-28 17:51:25,104:INFO    :cohorte.monitor.status:Pelix-Shell-TextConsole: Monitor status invalidated (status.invalidate() @195)
+2014-10-28 17:51:25,106:INFO    :cohorte.forker.basic:Pelix-Shell-TextConsole: Forker invalidated (basic._invalidate() @419)
+2014-10-28 17:51:25,106:INFO    :webadmin.webadmin   :Pelix-Shell-TextConsole: Unbound from /admin (webadmin.unbound_from() @675)
+2014-10-28 17:51:25,107:INFO    :webadmin.webadmin   :Pelix-Shell-TextConsole: Webadmin invalidated (webadmin.invalidate() @662)
+2014-10-28 17:51:25,109:INFO    :cohorte.debug.servlet:Pelix-Shell-TextConsole: Debug servlet Gone (servlet.invalidate() @350)
+2014-10-28 17:51:25,446:INFO    :pelix.shell.remote  :Pelix-Shell-TextConsole: RemoteShell gone from port: 1502 (remote.invalidate() @392)
+2014-10-28 17:51:25,448:INFO    :pelix.shell.core    :Pelix-Shell-TextConsole: Shell services unregistered (core.stop() @1419)
+2014-10-28 17:51:25,976:INFO    :pelix-http-service  :Pelix-Shell-TextConsole: Shutting down HTTP server: [::]:1501 ... (basic.log() @707)
+2014-10-28 17:51:26,086:INFO    :pelix-http-service  :Pelix-Shell-TextConsole: Waiting HTTP server ([::]:1501) thread to stop... (basic.log() @707)
+2014-10-28 17:51:26,086:INFO    :pelix-http-service  :Pelix-Shell-TextConsole: HTTP server down: [::]:1501 ... (basic.log() @707)

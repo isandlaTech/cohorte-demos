@@ -1,0 +1,422 @@
+2014/10/28; 17:50:00:111; INFO   ;             main; .CIsolateLoggerChannel_3586;                      open; Open logger [cohorte.isolate.675aca95-9910-4f01-94d8-2ccbb6127900+2]
+2014/10/28; 17:50:00:188; INFO   ;             main; l.CBundleBaseActivator_4495;                initLogger; 
+----------------------------------------------------------------------------------------------------------------------------------
+            java.class.version=[51.0]
+            java.endorsed.dirs=[/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/endorsed]
+                 java.ext.dirs=[/Users/debbabi/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre
+                                /lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/
+                                usr/lib/java]
+                     java.home=[/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre]
+                java.io.tmpdir=[/var/folders/nc/2pdjntl960129hl6dzx0cfbr0000gn/T/]
+             java.runtime.name=[OpenJDK Runtime Environment]
+          java.runtime.version=[1.7.0-u40-unofficial-b1]
+    java.specification.version=[1.7]
+                   java.vendor=[Oracle Corporation]
+               java.vendor.url=[http://java.oracle.com/]
+                  java.version=[1.7.0-u40-unofficial]
+                  java.vm.info=[mixed mode]
+                  java.vm.name=[OpenJDK 64-Bit Server VM]
+                java.vm.vendor=[Oracle Corporation]
+               java.vm.version=[24.0-b50]
+----------------------------------------------------------------------------------------------------------------------------------
+                       os.arch=[x86_64]
+                       os.name=[Mac OS X]
+                    os.version=[10.10]
+----------------------------------------------------------------------------------------------------------------------------------
+                      user.dir=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/var/temper.java/000-6
+                                75aca95-9910-4f01-94d8-2ccbb6127900]
+                     user.home=[/Users/debbabi]
+                 user.language=[en]
+                     user.name=[debbabi]
+                   user.region=[null]
+                  user.country=[US]
+                 user.timezone=[Europe/Paris]
+----------------------------------------------------------------------------------------------------------------------------------
+               java.class.path=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/felix/org.apache.felix.framework-4.2.1.jar:
+                                /Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo/org.cohorte.pyboot.api-1.0.0-SNAPSHOT.jar]
+             java.library.path=[/Users/debbabi/Library/Java/Extensions:
+                                /Library/Java/Extensions:
+                                /Network/Library/Java/Extensions:
+                                /System/Library/Java/Extensions:
+                                /usr/lib/java:
+                                .]
+                defaultCharset=[UTF-8]
+           supported.encodings=[Big5               Big5-HKSCS         EUC-JP             EUC-KR             GB18030            ;
+                                GB2312             GBK                IBM-Thai           IBM00858           IBM01140           ;
+                                IBM01141           IBM01142           IBM01143           IBM01144           IBM01145           ;
+                                IBM01146           IBM01147           IBM01148           IBM01149           IBM037             ;
+                                IBM1026            IBM1047            IBM273             IBM277             IBM278             ;
+                                IBM280             IBM284             IBM285             IBM297             IBM420             ;
+                                IBM424             IBM437             IBM500             IBM775             IBM850             ;
+                                IBM852             IBM855             IBM857             IBM860             IBM861             ;
+                                IBM862             IBM863             IBM864             IBM865             IBM866             ;
+                                IBM868             IBM869             IBM870             IBM871             IBM918             ;
+                                ISO-2022-CN        ISO-2022-JP        ISO-2022-JP-2      ISO-2022-KR        ISO-8859-1         ;
+                                ISO-8859-13        ISO-8859-15        ISO-8859-2         ISO-8859-3         ISO-8859-4         ;
+                                ISO-8859-5         ISO-8859-6         ISO-8859-7         ISO-8859-8         ISO-8859-9         ;
+                                JIS_X0201          JIS_X0212-1990     KOI8-R             KOI8-U             Shift_JIS          ;
+                                TIS-620            US-ASCII           UTF-16             UTF-16BE           UTF-16LE           ;
+                                UTF-32             UTF-32BE           UTF-32LE           UTF-8              windows-1250       ;
+                                windows-1251       windows-1252       windows-1253       windows-1254       windows-1255       ;
+                                windows-1256       windows-1257       windows-1258       windows-31j        x-Big5-HKSCS-2001  ;
+                                x-Big5-Solaris     x-COMPOUND_TEXT    x-euc-jp-linux     x-EUC-TW           x-eucJP-Open       ;
+                                x-IBM1006          x-IBM1025          x-IBM1046          x-IBM1097          x-IBM1098          ;
+                                x-IBM1112          x-IBM1122          x-IBM1123          x-IBM1124          x-IBM1364          ;
+                                x-IBM1381          x-IBM1383          x-IBM33722         x-IBM737           x-IBM833           ;
+                                x-IBM834           x-IBM856           x-IBM874           x-IBM875           x-IBM921           ;
+                                x-IBM922           x-IBM930           x-IBM933           x-IBM935           x-IBM937           ;
+                                x-IBM939           x-IBM942           x-IBM942C          x-IBM943           x-IBM943C          ;
+                                x-IBM948           x-IBM949           x-IBM949C          x-IBM950           x-IBM964           ;
+                                x-IBM970           x-ISCII91          x-ISO-2022-CN-CNS  x-ISO-2022-CN-GB   x-iso-8859-11      ;
+                                x-JIS0208          x-JISAutoDetect    x-Johab            x-MacArabic        x-MacCentralEurope ;
+                                x-MacCroatian      x-MacCyrillic      x-MacDingbat       x-MacGreek         x-MacHebrew        ;
+                                x-MacIceland       x-MacRoman         x-MacRomania       x-MacSymbol        x-MacThai          ;
+                                x-MacTurkish       x-MacUkraine       x-MS932_0213       x-MS950-HKSCS      x-MS950-HKSCS-XP   ;
+                                x-mswin-936        x-PCK              x-SJIS_0213        x-UTF-16LE-BOM     X-UTF-32BE-BOM     ;
+                                X-UTF-32LE-BOM     x-windows-50220    x-windows-50221    x-windows-874      x-windows-949      ;
+                                x-windows-950      x-windows-iso2022jp]
+----------------------------------------------------------------------------------------------------------------------------------
+                   awt.toolkit=[sun.lwawt.macosx.LWCToolkit]
+                 file.encoding=[UTF-8]
+             file.encoding.pkg=[sun.io]
+                file.separator=[/]
+             ftp.nonProxyHosts=[local|*.local|169.254/16|*.169.254/16]
+                gopherProxySet=[false]
+            http.nonProxyHosts=[local|*.local|169.254/16|*.169.254/16]
+          java.awt.graphicsenv=[sun.awt.CGraphicsEnvironment]
+           java.awt.printerjob=[sun.lwawt.macosx.CPrinterJob]
+       java.specification.name=[Java Platform API Specification]
+     java.specification.vendor=[Oracle Corporation]
+           java.vendor.url.bug=[http://bugreport.sun.com/bugreport/]
+    java.vm.specification.name=[Java Virtual Machine Specification]
+  java.vm.specification.vendor=[Oracle Corporation]
+ java.vm.specification.version=[1.7]
+                line.separator=[
+]
+                path.separator=[:]
+            socksNonProxyHosts=[local|*.local|169.254/16|*.169.254/16]
+           sun.arch.data.model=[64]
+           sun.boot.class.path=[/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/resources.jar:/Library/Java/JavaVi
+                                rtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0
+                                _u40_2.4.1/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/
+                                jsse.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/jce.jar:/Library/Java/Jav
+                                aVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/open
+                                jdk_1.7.0_u40_2.4.1/jre/lib/netx.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/l
+                                ib/plugin.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/rhino.jar:/Library/J
+                                ava/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/op
+                                enjdk_1.7.0_u40_2.4.1/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jr
+                                e/classes]
+         sun.boot.library.path=[/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1/jre/lib]
+                sun.cpu.endian=[little]
+               sun.cpu.isalist=[]
+       sun.io.unicode.encoding=[UnicodeBig]
+              sun.jnu.encoding=[UTF-8]
+       sun.management.compiler=[HotSpot 64-Bit Tiered Compilers]
+            sun.os.patch.level=[unknown]
+           user.country.format=[FR]
+2014/10/28; 17:50:00:193; INFO   ;             main; l.CBundleBaseActivator_4495;                initLogger; 
+----------------------------------------------------------------------------------------------------------------------------------
+Apple_PubSub_Socket_Render=[/private/tmp/com.apple.launchd.hlxhk8fJ1Y/Render]
+                  CLICOLOR=[1]
+              COHORTE_BASE=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc]
+              COHORTE_HOME=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT]
+      COHORTE_ISOLATE_NAME=[temper.java]
+       COHORTE_ISOLATE_UID=[675aca95-9910-4f01-94d8-2ccbb6127900]
+           COHORTE_LOGFILE=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/var/forker.log]
+         COHORTE_NODE_NAME=[java-sensor-pc]
+          COHORTE_NODE_UID=[4748d1c1-c680-4f47-b2cd-303b771bb346]
+              COHORTE_ROOT=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT]
+                   DISPLAY=[/private/tmp/com.apple.launchd.TB2JUb6AiW/org.macosforge.xquartz:0]
+                      HOME=[/Users/debbabi]
+                 JAVA_HOME=[/Library/Java/JavaVirtualMachines/openjdk_1.7.0_u40_2.4.1]
+                  LC_CTYPE=[UTF-8]
+                   LOGNAME=[debbabi]
+                  LSCOLORS=[ExFxCxDxBxegedabagacad]
+                    OLDPWD=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT]
+                      PATH=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/bin:/Library/Java/JavaVirtualMachines/openjdk_
+                            1.7.0_u40_2.4.1/bin:/usr/local/apache-maven/apache-maven-3.2.3/bin:/Library/Java/JavaVirtualMa
+                            chines/jdk1.8.0_20.jdk/Contents/Home/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin
+                            :/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin]
+                       PWD=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc]
+                PYTHONPATH=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/lib:/Users/debb
+                            abi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/repo:/Users/debbabi/Downlo
+                            ads/cohorte-1.0.0-SNAPSHOT/lib:/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT/repo]
+                     SHELL=[/usr/local/bin/fish]
+                     SHLVL=[4]
+             SSH_AUTH_SOCK=[/private/tmp/com.apple.launchd.qZAZqQmXug/Listeners]
+                      TERM=[xterm-256color]
+              TERM_PROGRAM=[Apple_Terminal]
+      TERM_PROGRAM_VERSION=[343]
+           TERM_SESSION_ID=[F52D4FC5-20C8-46D3-A294-C7D75F6DD3D8]
+                    TMPDIR=[/var/folders/nc/2pdjntl960129hl6dzx0cfbr0000gn/T/]
+                      USER=[debbabi]
+                 XPC_FLAGS=[0x0]
+          XPC_SERVICE_NAME=[0]
+                         _=[/Library/Frameworks/Python.framework/Versions/3.4/bin/python3]
+   __CF_USER_TEXT_ENCODING=[0x1F5:0x0:0x0]
+       __PYVENV_LAUNCHER__=[/Library/Frameworks/Python.framework/Versions/3.4/bin/python3]
+2014/10/28; 17:50:00:194; INFO   ;             main; l.CBundleBaseActivator_4495;                     start; START  Id=[CBundleBaseActivator+1]        cohorte.isolate.uid=[675aca95-9910-4f01-94d8-2ccbb6127900]
+      cohorte.isolate.name=[temper.java]
+          cohorte.node.uid=[4748d1c1-c680-4f47-b2cd-303b771bb346]
+         cohorte.node.name=[java-sensor-pc]
+              cohorte.home=[/Users/debbabi/Downloads/cohorte-1.0.0-SNAPSHOT]
+              cohorte.base=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc]
+                IsolateDir=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/var/temper.java/000-675aca95-9910-4f01-94d8-2ccbb6127900]
+             IsolateLogDir=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/var/temper.java/000-675aca95-9910-4f01-94d8-2ccbb6127900/log]
+         IsolateStorageDir=[/Users/debbabi/Dropbox/dev/cohorte-project/cohorte-demos/temper/java-sensor-pc/var/temper.java/000-675aca95-9910-4f01-94d8-2ccbb6127900/storage]
+       NbFoundRepositories=[2]
+ 
+2014/10/28; 17:50:00:195; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.psem2m.isolates.services.dirs.IPlatformDirsSvc] Registered=[true] 
+2014/10/28; 17:50:00:203; INFO   ;             main; l.CBundleBaseActivator_0000;      getLogServiceFactory; CLogServiceFactory.<init>: instanciated - LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:203; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.osgi.service.log.LogService] Registered=[true] 
+2014/10/28; 17:50:00:204; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.osgi.service.log.LogReaderService] Registered=[true] 
+2014/10/28; 17:50:00:204; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.psem2m.isolates.base.IIsolateLoggerSvc] Registered=[true] 
+2014/10/28; 17:50:00:205; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.psem2m.isolates.services.dirs.IFileFinderSvc] Registered=[true] 
+2014/10/28; 17:50:00:206; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[org.psem2m.isolates.base.bundles.IBundleFinderSvc] Registered=[true] 
+2014/10/28; 17:50:00:216; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.osgi.service.cm.ConfigurationListener]] Registered=[true] 
+2014/10/28; 17:50:00:226; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.queue.QueueService]] Registered=[true] 
+2014/10/28; 17:50:00:227; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.queue.QueueService, org.osgi.service.cm.ManagedService]] Registered=[true] 
+2014/10/28; 17:50:00:243; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.ExtensionDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:245; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.ExtensionDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:246; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.DeclarationBuilderService]] Registered=[true] 
+2014/10/28; 17:50:00:253; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:257; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:259; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:260; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:260; INFO   ;             main; BundleLoggersActivator_5731;                     start; START  Id=[CBundleLoggersActivator+4] BundleId=[org.psem2m.isolates.loggers] 
+2014/10/28; 17:50:00:261; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:263; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:264; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:266; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:268; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:269; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:271; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:271; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.service.threadio.ThreadIO]] Registered=[true] 
+2014/10/28; 17:50:00:272; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:273; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:274; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:275; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.service.command.CommandProcessor]] Registered=[true] 
+2014/10/28; 17:50:00:275; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:278; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:285; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:286; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:287; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:288; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.service.command.Converter]] Registered=[true] 
+2014/10/28; 17:50:00:289; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:291; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:291; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.shell.Builtin]] Registered=[true] 
+2014/10/28; 17:50:00:292; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:294; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.shell.Procedural]] Registered=[true] 
+2014/10/28; 17:50:00:294; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:295; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:296; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.shell.Posix]] Registered=[true] 
+2014/10/28; 17:50:00:296; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:297; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:297; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.shell.Telnet]] Registered=[true] 
+2014/10/28; 17:50:00:298; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:300; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.shell.Shell]] Registered=[true] 
+2014/10/28; 17:50:00:300; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:312; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.command.Basic]] Registered=[true] 
+2014/10/28; 17:50:00:315; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.command.Inspect]] Registered=[true] 
+2014/10/28; 17:50:00:318; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.command.Files]] Registered=[true] 
+2014/10/28; 17:50:00:322; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.gogo.command.OBR]] Registered=[true] 
+2014/10/28; 17:50:00:323; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:331; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:335; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.shell.osgi.OsgiCommands]] Registered=[true] 
+2014/10/28; 17:50:00:336; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:339; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:342; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:344; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.HandlerFactory]] Registered=[true] 
+2014/10/28; 17:50:00:348; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:357; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:367; INFO   ;             main; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.apache.felix.http.jetty] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:375; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:403; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.osgi.service.cm.ManagedService]] Registered=[true] 
+2014/10/28; 17:50:00:403; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:405; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:407; INFO   ;             main; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.jabsorb.ng] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:408; INFO   ;             main; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.osgi.Activator.start() :: Jabsorb OSGi bundle ready
+2014/10/28; 17:50:00:413; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:426; INFO   ;  pool-1-thread-1; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.cohorte.composer.isolate] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:426; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-pyboot-configuration-parser-factory
+2014/10/28; 17:50:00:427; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-java-bridge-client-factory
+2014/10/28; 17:50:00:427; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: psem2m-loggers-channel-factory
+2014/10/28; 17:50:00:428; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: psem2m-loggers-channels-factory
+2014/10/28; 17:50:00:428; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.composer.isolate.IsolateComposer
+2014/10/28; 17:50:00:428; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.composer.isolate.ipojo.IPojoAgent
+2014/10/28; 17:50:00:429; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-pyboot-configuration-start-factory
+2014/10/28; 17:50:00:430; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.composer.api.IAgent]] Registered=[true] 
+2014/10/28; 17:50:00:433; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:438; INFO   ;  pool-1-thread-1; solate.IsolateComposer_0000;                       log; Isolate composer validated
+2014/10/28; 17:50:00:439; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.composer.api.IIsolateComposer]] Registered=[true] 
+2014/10/28; 17:50:00:445; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:447; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:453; INFO   ;  pool-1-thread-1; s.impl.CLogChannelsSvc_4027;              validatePojo; VALIDATE  Id=[CLogChannelsSvc+5] PojoId=[psem2m-loggers-channels] 
+2014/10/28; 17:50:00:454; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.psem2m.isolates.loggers.ILogChannelsSvc]] Registered=[true] 
+2014/10/28; 17:50:00:457; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:460; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:463; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:466; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:468; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:471; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:473; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:474; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:476; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:480; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:482; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.pyboot.api.IPyBridge]] Registered=[true] 
+2014/10/28; 17:50:00:483; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:485; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:487; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:488; FINE   ; tty HTTP Service; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.osgi.service.http.HttpService, org.apache.felix.http.api.ExtHttpService]] Registered=[true] 
+2014/10/28; 17:50:00:489; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:489; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:492; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.psem2m.isolates.services.conf.IConfigurationParser]] Registered=[true] 
+2014/10/28; 17:50:00:492; INFO   ;  pool-1-thread-1; l.StatusStorageCreator_7125;                  validate; Status Storage Creator ready
+2014/10/28; 17:50:00:493; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.psem2m.status.storage.IStatusStorageCreator]] Registered=[true] 
+2014/10/28; 17:50:00:495; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:498; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:500; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:502; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:503; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:505; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:506; INFO   ; tty HTTP Service; .logger.AbstractLogger_0000;                       log; Started jetty 7.x.y-SNAPSHOT at port(s) HTTP:0 on context path /
+2014/10/28; 17:50:00:507; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:509; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:511; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:513; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:514; FINE   ;             main; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.psem2m.isolates.services.conf.IStartConfiguration]] Registered=[true] 
+2014/10/28; 17:50:00:515; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:517; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:518; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.InstanceDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:521; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:522; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:525; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.extender.TypeDeclaration]] Registered=[true] 
+2014/10/28; 17:50:00:529; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-remote-shell-factory
+2014/10/28; 17:50:00:529; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:533; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:540; INFO   ;  pool-1-thread-1; ell.RemoteShellService_3543;                  validate; Remote Shell bound to port=[58603] 
+2014/10/28; 17:50:00:541; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.shell.IRemoteShell]] Registered=[true] 
+2014/10/28; 17:50:00:550; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: herald-http-discovery-multicast-factory
+2014/10/28; 17:50:00:550; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:553; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.http.discovery.MulticastStarter
+2014/10/28; 17:50:00:553; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:557; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.http.impl.HttpDirectory
+2014/10/28; 17:50:00:557; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:561; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.http.impl.HttpReceiver
+2014/10/28; 17:50:00:561; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:564; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.http.impl.HttpTransport
+2014/10/28; 17:50:00:565; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:578; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:598; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.arch.gogo.Arch]] Registered=[true] 
+2014/10/28; 17:50:00:606; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-remote-dispatcher-factory
+2014/10/28; 17:50:00:607; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:609; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-remote-registry-factory
+2014/10/28; 17:50:00:610; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:613; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.rpc.HeraldDiscovery
+2014/10/28; 17:50:00:613; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:616; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.rpc.HeraldRpcExporter
+2014/10/28; 17:50:00:616; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:618; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: org.cohorte.herald.rpc.HeraldRpcImporter
+2014/10/28; 17:50:00:619; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:621; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: cohorte-shell-agent-factory
+2014/10/28; 17:50:00:621; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:624; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: psem2m-slave-agent-core-factory
+2014/10/28; 17:50:00:625; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:627; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:637; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: psem2m-threads-monitor-factory
+2014/10/28; 17:50:00:637; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:640; INFO   ;  pool-1-thread-1; olate.ipojo.IPojoAgent_0000;                       log; Factory bound: java-sensor-factory
+2014/10/28; 17:50:00:640; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.Factory]] Registered=[true] 
+2014/10/28; 17:50:00:642; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:654; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:667; INFO   ;  pool-1-thread-1; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.cohorte.herald.http] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:667; FINEST ;  pool-1-thread-1; overy.MulticastStarter_0000;                       log; Herald Multicast discovery instantiated: org.apache.felix.ipojo.InstanceManager@3639d41 - org.cohorte.herald.http.discovery.MulticastHeartbeat@76c7c56a
+2014/10/28; 17:50:00:668; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:672; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:683; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:695; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:706; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.ITransportDirectory, org.cohorte.herald.http.impl.IHttpDirectory]] Registered=[true] 
+2014/10/28; 17:50:00:709; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IDirectory]] Registered=[true] 
+2014/10/28; 17:50:00:712; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:729; INFO   ;  pool-1-thread-1; http.impl.HttpReceiver_0000;                       log; HTTP Receiver bound to port=58601
+2014/10/28; 17:50:00:751; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IMessageListener]] Registered=[true] 
+2014/10/28; 17:50:00:759; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.ITransport]] Registered=[true] 
+2014/10/28; 17:50:00:761; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IHerald]] Registered=[true] 
+2014/10/28; 17:50:00:766; INFO   ;  pool-1-thread-1; e.agent.core.AgentCore_4098;                  validate; Isolate agent validated
+2014/10/28; 17:50:00:769; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IMessageListener, org.cohorte.herald.IDirectoryGroupListener, org.psem2m.isolates.slave.agent.ISvcAgent]] Registered=[true] 
+2014/10/28; 17:50:00:773; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.http.impl.IHttpReceiver]] Registered=[true] 
+2014/10/28; 17:50:00:775; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IHeraldInternal]] Registered=[true] 
+2014/10/28; 17:50:00:778; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:785; INFO   ;  pool-1-thread-1; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.cohorte.remote.core] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:786; WARNING;  pool-1-thread-1; .core.ExportDispatcher_0000;                       log; First export loop
+2014/10/28; 17:50:00:788; WARNING;  pool-1-thread-1; .core.ExportDispatcher_0000;                       log; No exporters yet for [org.cohorte.composer.api.IIsolateComposer]
+2014/10/28; 17:50:00:788; WARNING;  pool-1-thread-1; .core.ExportDispatcher_0000;                       log; Register to service events
+2014/10/28; 17:50:00:789; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.remote.IExportsDispatcher]] Registered=[true] 
+2014/10/28; 17:50:00:791; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:796; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.remote.IImportsRegistry]] Registered=[true] 
+2014/10/28; 17:50:00:799; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:810; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IMessageListener, org.cohorte.herald.IDirectoryListener, org.cohorte.remote.IExportEndpointListener]] Registered=[true] 
+2014/10/28; 17:50:00:817; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:840; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IMessageListener, org.cohorte.remote.IServiceExporter]] Registered=[true] 
+2014/10/28; 17:50:00:841; WARNING;  pool-1-thread-1; .core.ExportDispatcher_0000;                       log; Binding exporter: org.cohorte.herald.rpc.HeraldRpcExporter@66edadfa
+2014/10/28; 17:50:00:845; WARNING;  pool-1-thread-1; .core.ExportDispatcher_0000;                       log; ... New endpoint for [org.cohorte.composer.api.IIsolateComposer] - feda4c14-b2c6-4355-b0dd-895cc12b5776
+2014/10/28; 17:50:00:848; INFO   ;  pool-1-thread-1; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.cohorte.herald.core] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:848; WARNING;  pool-1-thread-1; rte.herald.core.Herald_0000;                       log; No peer in group: all
+2014/10/28; 17:50:00:854; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:859; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.remote.IImportEndpointListener]] Registered=[true] 
+2014/10/28; 17:50:00:861; FINEST ;  pool-2-thread-1; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a): null
+2014/10/28; 17:50:00:862; WARNING;  pool-1-thread-3; rte.herald.core.Herald_0000;                       log; Some peers haven't been notified: [cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a)]
+2014/10/28; 17:50:00:862; INFO   ;  pool-1-thread-3; e.agent.core.AgentCore_4098;                  groupSet; Monitors notified of isolate readiness
+2014/10/28; 17:50:00:863; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:885; INFO   ;  pool-1-thread-2; nal.CLogServiceFactory_0000;                    <init>; CLogServiceImpl.<init>: instanciated - SymbolicName=[org.cohorte.herald.rpc] LogInternal=[org.psem2m.isolates.base.internal.CLogInternal@2f86c83b]
+2014/10/28; 17:50:00:885; SEVERE ;  pool-1-thread-2; .rpc.HeraldRpcImporter_0000;                       log; No interface found in: [temper.aggregator.AggregatorService]
+2014/10/28; 17:50:00:887; FINE   ;  pool-1-thread-1; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.cohorte.herald.IMessageListener]] Registered=[true] 
+2014/10/28; 17:50:00:887; SEVERE ;  pool-1-thread-2; .rpc.HeraldRpcImporter_0000;                       log; No specification class could be loaded: java.lang.ClassNotFoundException: [temper.aggregator.AggregatorService] 
+class=[java.lang.ClassNotFoundException]
+mess=[[temper.aggregator.AggregatorService]]
+stack=
+( 0) org.cohorte.herald.rpc.HeraldRpcImporter(__M_loadInterfaces:258)
+( 1) org.cohorte.herald.rpc.HeraldRpcImporter(loadInterfaces:-1)
+( 2) org.cohorte.herald.rpc.HeraldRpcImporter(__M_endpointAdded:137)
+( 3) org.cohorte.herald.rpc.HeraldRpcImporter(endpointAdded:-1)
+( 4) org.cohorte.remote.core.ImportsRegistry(__M_add:127)
+( 5) org.cohorte.remote.core.ImportsRegistry(add:-1)
+( 6) org.cohorte.remote.IImportsRegistry$$Proxy(add:-1)
+( 7) org.cohorte.herald.rpc.HeraldDiscovery(__M_heraldMessage:200)
+( 8) org.cohorte.herald.rpc.HeraldDiscovery(heraldMessage:-1)
+( 9) org.cohorte.herald.core.Herald$1(__M_run:747)
+(10) org.cohorte.herald.core.Herald$1(run:-1)
+(11) java.util.concurrent.ThreadPoolExecutor(runWorker:1145)
+(12) java.util.concurrent.ThreadPoolExecutor$Worker(run:615)
+(13) java.lang.Thread(run:724)
+ 
+2014/10/28; 17:50:00:904; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.reflect.ClassAnalyzer.analyzeClass() :: analyzing org.cohorte.composer.isolate.IsolateComposer
+2014/10/28; 17:50:00:910; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.localarg.LocalArgController.registerLocalArgResolver() :: registered local arg resolver org.jabsorb.ng.localarg.impl.HttpServletRequestArgResolver for local class javax.servlet.http.HttpServletRequest with context javax.servlet.http.HttpServletRequest
+2014/10/28; 17:50:00:911; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.localarg.LocalArgController.registerLocalArgResolver() :: registered local arg resolver org.jabsorb.ng.localarg.impl.HttpServletResponseArgResolver for local class javax.servlet.http.HttpServletResponse with context javax.servlet.http.HttpServletResponse
+2014/10/28; 17:50:00:911; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.localarg.LocalArgController.registerLocalArgResolver() :: registered local arg resolver org.jabsorb.ng.localarg.impl.HttpSessionArgResolver for local class javax.servlet.http.HttpSession with context javax.servlet.http.HttpServletRequest
+2014/10/28; 17:50:00:912; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.localarg.LocalArgController.registerLocalArgResolver() :: registered local arg resolver org.jabsorb.ng.localarg.impl.JSONRPCBridgeServletArgResolver for local class org.jabsorb.ng.JSONRPCBridge with context javax.servlet.http.HttpServletRequest
+2014/10/28; 17:50:00:912; FINE   ;  pool-1-thread-3; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[temper.sensors.TemperatureService]] Registered=[true] 
+2014/10/28; 17:50:00:915; FINEST ;  pool-1-thread-5; e.core.ImportsRegistry_0000;                       log; Already known endpoint: b29a4f58-aea6-4f7e-88c5-944758a307bb
+2014/10/28; 17:50:00:916; INFO   ;  pool-1-thread-4; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.serializer.impl.BeanSerializer.analyzeBean() :: analyzing org.cohorte.composer.api.RawComponent
+2014/10/28; 17:50:00:918; FINEST ;  pool-1-thread-1; e.core.ImportsRegistry_0000;                       log; Already known endpoint: 8ec8bcec-ca55-4b2b-8e3e-ea17a57f96e4
+2014/10/28; 17:50:00:927; FINE   ;  pool-1-thread-4; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[org.apache.felix.ipojo.architecture.Architecture]] Registered=[true] 
+2014/10/28; 17:50:00:929; FINE   ;  pool-1-thread-4; l.CBundleBaseActivator_4495;     logServiceRegistering; Service=[[temper.sensors.TemperatureService]] Registered=[true] 
+2014/10/28; 17:50:00:946; FINEST ;  pool-2-thread-1; p.impl.HttpTransport$1_0000;                       log; Error posting a message to web.interface (f59f7a31-8205-4161-8147-32f55922107e): null
+2014/10/28; 17:50:00:947; FINEST ;  pool-2-thread-4; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (5a4089b0-6003-4474-88ed-08f94e1f0595): null
+2014/10/28; 17:50:00:947; FINEST ;  pool-2-thread-5; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (84d69410-4398-463a-be4d-211e8ecc1787): null
+2014/10/28; 17:50:00:947; FINEST ;  pool-2-thread-3; p.impl.HttpTransport$1_0000;                       log; Error posting a message to aggregation (67b3903c-8155-4b6a-a876-3b4769826c77): null
+2014/10/28; 17:50:00:947; FINEST ;  pool-2-thread-2; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a): null
+2014/10/28; 17:50:00:950; FINEST ;  pool-2-thread-1; p.impl.HttpTransport$1_0000;                       log; Error posting a message to temper.python (524e82f2-7718-4f84-9a47-bb05866ecced): null
+2014/10/28; 17:50:00:950; WARNING;  pool-1-thread-4; rte.herald.core.Herald_0000;                       log; Some peers haven't been notified: [cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a), aggregation (67b3903c-8155-4b6a-a876-3b4769826c77), cohorte.internals.forker (5a4089b0-6003-4474-88ed-08f94e1f0595), cohorte.internals.forker (84d69410-4398-463a-be4d-211e8ecc1787), web.interface (f59f7a31-8205-4161-8147-32f55922107e), temper.python (524e82f2-7718-4f84-9a47-bb05866ecced)]
+2014/10/28; 17:50:01:638; INFO   ;  pool-1-thread-2; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.reflect.ClassAnalyzer.analyzeClass() :: analyzing temper.sensors.impl.JavaTemperatureSensor
+2014/10/28; 17:50:01:652; FINEST ;  pool-2-thread-3; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (5a4089b0-6003-4474-88ed-08f94e1f0595): null
+2014/10/28; 17:50:01:652; FINEST ;  pool-2-thread-2; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (84d69410-4398-463a-be4d-211e8ecc1787): null
+2014/10/28; 17:50:01:652; FINEST ;  pool-2-thread-5; p.impl.HttpTransport$1_0000;                       log; Error posting a message to aggregation (67b3903c-8155-4b6a-a876-3b4769826c77): null
+2014/10/28; 17:50:01:652; FINEST ;  pool-2-thread-1; p.impl.HttpTransport$1_0000;                       log; Error posting a message to web.interface (f59f7a31-8205-4161-8147-32f55922107e): null
+2014/10/28; 17:50:01:653; FINEST ;  pool-2-thread-4; p.impl.HttpTransport$1_0000;                       log; Error posting a message to cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a): null
+2014/10/28; 17:50:01:655; FINEST ;  pool-2-thread-3; p.impl.HttpTransport$1_0000;                       log; Error posting a message to temper.python (524e82f2-7718-4f84-9a47-bb05866ecced): null
+2014/10/28; 17:50:01:655; WARNING;  pool-1-thread-3; rte.herald.core.Herald_0000;                       log; Some peers haven't been notified: [cohorte.internals.forker (cfebd3ed-9372-4e06-bbd0-7567e1d6f44a), aggregation (67b3903c-8155-4b6a-a876-3b4769826c77), cohorte.internals.forker (5a4089b0-6003-4474-88ed-08f94e1f0595), cohorte.internals.forker (84d69410-4398-463a-be4d-211e8ecc1787), web.interface (f59f7a31-8205-4161-8147-32f55922107e), temper.python (524e82f2-7718-4f84-9a47-bb05866ecced)]
+2014/10/28; 17:50:09:085; INFO   ;  pool-1-thread-3; orb.ng.osgi.LoggerOSGi_0000;                       log; org.jabsorb.ng.serializer.impl.BeanSerializer.analyzeBean() :: analyzing org.cohorte.composer.api.Isolate
+2014/10/28; 17:51:19:185; WARNING;  pool-1-thread-1; e.core.ImportsRegistry_0000;                       log; Unknown import endpoint UID: 523f809f-0680-4189-bc93-82d9296fa012
+2014/10/28; 17:51:22:275; WARNING;  pool-1-thread-5; e.core.ImportsRegistry_0000;                       log; Unknown import endpoint UID: d86abe2b-13b1-4577-8b1c-be940aac589c
+2014/10/28; 17:51:25:097; WARNING;  pool-1-thread-2; e.core.ImportsRegistry_0000;                       log; Unknown import endpoint UID: e6c43554-2263-4f49-a603-30862c7e50d5
