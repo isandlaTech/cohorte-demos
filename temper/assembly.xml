@@ -16,6 +16,10 @@
          <excludes>
             <exclude>**/*.DS_Store</exclude>
             <exclude>**/target/**</exclude>
+            <exclude>**/var/**</exclude>
+            <exclude>**/.classpath</exclude>
+            <exclude>**/.project</exclude>
+            <exclude>**/.settings/**</exclude>
          </excludes>
       </fileSet>
    </fileSets>
