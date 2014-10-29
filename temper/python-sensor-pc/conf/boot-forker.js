@@ -6,12 +6,12 @@
 	{
 		"name" : "pelix-http-service",
 		"properties" : {
-			"pelix.http.port" : 2601
+			"pelix.http.port" : 0
 		}
 	}, {
 		"name" : "pelix-remote-shell",
 		"properties" : {
-			"pelix.shell.port" : 2602
+			"pelix.shell.port" : 0
 		}
 	}
  	]
