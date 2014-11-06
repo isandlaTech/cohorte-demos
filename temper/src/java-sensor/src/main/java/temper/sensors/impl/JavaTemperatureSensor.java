@@ -9,7 +9,7 @@ import org.apache.felix.ipojo.annotations.Provides;
 import org.apache.felix.ipojo.annotations.ServiceProperty;
 import org.apache.felix.ipojo.annotations.Validate;
 
-import temper.sensors.*;
+import temper.sensors.TemperatureService;
 
 /**
  * Java implementation of a fake sensor
@@ -17,7 +17,7 @@ import temper.sensors.*;
  * @author Thomas Calmant
  */
 @Component(name="java-sensor-factory")
-@Provides
+@Provides(specifications = TemperatureService.class)
 public class JavaTemperatureSensor implements TemperatureService {
 
 	/** Last temperature */

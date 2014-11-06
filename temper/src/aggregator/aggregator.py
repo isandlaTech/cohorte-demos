@@ -36,6 +36,8 @@ _logger = logging.getLogger(__name__)
 @Property("_poll_delta", "poll.delta", 10)
 @Requires("_sensors", "java:/temper.sensors.TemperatureService",
           aggregate=True, optional=True)
+@Requires("_listeners", "java:/temper.sensors.AggregatorListener",
+          aggregate=True, optional=True)
 @Provides("java:/temper.aggregator.AggregatorService")
 class Aggregator(object):
     """
@@ -49,6 +51,7 @@ class Aggregator(object):
         self._name = ""
         self._poll_delta = 0
         self._sensors = []
+        self._listeners = []
 
         # The values history (sensor -> list of dictionaries)
         self._history = {}
@@ -91,6 +94,20 @@ class Aggregator(object):
         with self._lock:
             return tuple(self._history.keys())
 
+    def get_active_sensors(self):
+        """
+        Retrieves the active sensors
+
+        :return: The list of active sensors
+        """
+        sensors = []
+        if self._sensors is not None:
+            for sensor in self._sensors:
+                try:
+                    name = sensor.getName()
+                    sensors.append(name)
+                except Exception as ex:
+                    _logger.error("Error retrieving sensor data: %s", ex)
 
     def _poll(self):
         """
@@ -137,6 +154,32 @@ class Aggregator(object):
                                       "unit": unit,
                                       "javaClass": HISTORY_ENTRY_CLASS})
 
+    def _fire_new_sensor(name, location):
+        """
+        Informes Aggregator Listeners about the new available Temperature sensor
+        """
+        for listener in self._listeners:
+            listener.newSensor(name, location)
+
+
+    def _fire_retired_sensor(name, location):
+        """
+        Informes Aggregator Listeners about the gone Temperature sensor
+        """
+        for listener in self._listeners:
+            listener.retiredSensor(name, location)
+
+    @BindField("_sensors")
+    def bindSensor(self, field, svc, ref):
+        name = svc.getName()
+        location = ref.get_property("location")
+        _fire_new_sensor(name, location)
+
+    @UnbindField("_sensors")
+    def bindSensor(self, field, svc, ref):
+        name = svc.getName()
+        location = ref.get_property("location")
+        _fire_retired_sensor(name, location)    
 
     @Bind
     def bind(self, svc, ref):
@@ -148,6 +191,7 @@ class Aggregator(object):
             import_str = "from %s" % props.get("service.imported.from")
         else:
             import_str = "local"
+        # if service is TemperatorSensor then informe listeners        
         _logger.debug("%s> Bound to %s (%s)", self._name, ref, import_str)
 
 
@@ -197,3 +241,5 @@ class Aggregator(object):
     getHistory = get_history
     getSensorHistory = get_sensor_history
     getSensors = get_sensors
+    getActiveSensors = get_active_sensors
+
