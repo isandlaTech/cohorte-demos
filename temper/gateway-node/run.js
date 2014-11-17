@@ -15,6 +15,6 @@
     },
     "application-id": "temper",
     "transport": [
-        "xmpp"
+        "xmpp", "http"
     ]
 }
