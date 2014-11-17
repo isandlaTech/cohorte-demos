@@ -1,12 +1,12 @@
 {
     "application-id": "temper",
     "node": {
-        "web-admin": 9000,
-        "shell-admin": 9001,
         "name": "gateway-node",
-        "auto-start": "true",
         "composition-file": "composition.js",
-        "top-composer": true
+        "auto-start": true,
+        "shell-admin": 9001,
+        "top-composer": true,
+        "web-admin": 9000
     },
     "transport": [
         "http"
