@@ -42,28 +42,28 @@
 						<artifactId>maven-antrun-plugin</artifactId>
 						<configuration>
 							<tasks>
-								<copy todir="python-sensor-pc/repo">
+								<copy todir="python-sensor-node/repo">
 								    <fileset dir="src/">
 								        <include name="python-sensor/**"/>
 								    </fileset>
 								</copy>
-								<copy todir="gateway/repo">
+								<copy todir="gateway-node/repo">
 								    <fileset dir="src/">
 								        <include name="aggregator/**"/>
 								        <include name="aggregator-ui/**"/>
 								    </fileset>
 								</copy>	
-								<copy todir="raspberry-pi/repo">
+								<copy todir="raspberry-node/repo">
 								    <fileset dir="src/">
 								        <include name="python-sensor/**"/>
 								    </fileset>
 								</copy>		
 								 <copy file="src/java-sensor/target/java-sensor-${project.version}.jar" 
-                        tofile="java-sensor-pc/repo/java-sensor-${project.version}.jar"/>
+                        tofile="java-sensor-node/repo/java-sensor-${project.version}.jar"/>
                         		<copy file="src/aggregator-service/target/aggregator-service-${project.version}.jar" 
-                        tofile="java-sensor-pc/repo/aggregator-service-${project.version}.jar"/>
+                        tofile="java-sensor-node/repo/aggregator-service-${project.version}.jar"/>
                         		<copy file="src/temperature-service/target/temperature-service-${project.version}.jar" 
-                        tofile="java-sensor-pc/repo/temperature-service-${project.version}.jar"/>								
+                        tofile="java-sensor-node/repo/temperature-service-${project.version}.jar"/>								
 							</tasks>
 						</configuration>
 						<executions>
@@ -99,27 +99,27 @@
 						<configuration>
 							<filesets>
 								<fileset>
-									<directory>datashower/repo</directory>
+									<directory>datashower-node/repo</directory>
 									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
-									<directory>gateway/repo</directory>
+									<directory>gateway-node/repo</directory>
 									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
-									<directory>java-sensor-pc/repo</directory>
+									<directory>java-sensor-node/repo</directory>
 									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
-									<directory>python-sensor-pc/repo</directory>
+									<directory>python-sensor-node/repo</directory>
 									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
-									<directory>raspberry-pi/repo</directory>
+									<directory>raspberry-node/repo</directory>
 									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
