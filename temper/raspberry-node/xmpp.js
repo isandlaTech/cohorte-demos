@@ -2,7 +2,6 @@
     "transport-xmpp": {
         "xmpp-server": "charmanson.isandlatech.com",
         "xmpp-port": 5222,
-        "xmpp-password": "Bender",
         "xmpp-jid": "bot@charmanson.isandlatech.com"
     },
     "node": {
