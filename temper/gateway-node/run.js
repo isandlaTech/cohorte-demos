@@ -1,20 +1,11 @@
 {
-    "transport-xmpp": {
-        "xmpp-server": "charmanson.isandlatech.com",
-        "xmpp-port": 5222,
-        "xmpp-password": "Bender",
-        "xmpp-jid": "bot@charmanson.isandlatech.com"
+    "node": {                
+        "name": "gateway-node",           
+        "composition-file": "composition.js",
+        "web-admin": 9000,     
+        "shell-admin": 9001
     },
-    "node": {
-        "auto-start": "true",
-        "shell-admin": 9001,
-        "name": "gateway-node",
-        "web-admin": 9000,
-        "top-composer": true,
-        "composition-file": "composition.js"
-    },
-    "application-id": "temper",
     "transport": [
-        "xmpp", "http"
+        "http"
     ]
 }
