@@ -40,7 +40,7 @@ class HelloComponents(object):
         else:
             result += "<ul>"
             for c in self._components:
-                result += "<li>" + c.get_name() + " <a href='/hello/"+c.get_name()+"''>say hello</a></li>"
+                result += "<li>" + c.get_name() + " <a href='/hello/" + c.get_name() + "''>say hello</a></li>"
             result += "</ul>"
 
         # handle the message

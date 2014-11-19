@@ -6,7 +6,7 @@
         "factory" : "cohorte-composer-top-factory",
         "name" : "cohorte-composer-top",
         "properties" : {
-            "autostart" : "true",
+            "autostart" : "True",
             "composition.filename" : "composition.js"
         }
     }
