@@ -21,4 +21,7 @@ import re
 class Component_a(object):
 
     def say_hello(self):
-        return "Hi, I am component A!"
+        return "Hi, I am A component!"
+
+    def get_name(self):
+    	return "A_component"

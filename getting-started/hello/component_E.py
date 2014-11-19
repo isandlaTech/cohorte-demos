@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-- Content-Encoding: UTF-8 --
 """
-Component C.
+Component E.
 
 :author: Bassem Debbabi
 :copyright: Copyright 2013, isandlaTech
@@ -12,12 +12,12 @@ Component C.
 from pelix.ipopo.decorators import ComponentFactory, Provides, \
     Validate, Invalidate, Requires, BindField, UnbindField
 
-@ComponentFactory("component_c_factory")
+@ComponentFactory("component_e_factory")
 @Provides("java:/cohorte.demos.hello.HelloService")
-class Component_c(object):
+class Component_e(object):
 
     def say_hello(self):
-        return "Hola, soy componente C!"
+        return "Ghost E Component!"
 
     def get_name(self):
-        return "C_component"
+        return "E_component"

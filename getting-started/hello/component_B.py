@@ -17,4 +17,7 @@ from pelix.ipopo.decorators import ComponentFactory, Provides, \
 class Component_b(object):
 
     def say_hello(self):
-        return "Bonjour, je suis un composant B!"
+        return "Bonjour, je suis le composant B!"
+
+    def get_name(self):
+        return "B_component"

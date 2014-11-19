@@ -11,5 +11,9 @@ public class ComponentD implements HelloService {
 	public String say_hello() {
 		return "Marhaba, ana composant D ma3moul bi Java!";
 	}
+
+	public String get_name() {
+		return "D_component";
+	}
 }
 
