@@ -36,8 +36,6 @@ _logger = logging.getLogger(__name__)
 @Property("_poll_delta", "poll.delta", 10)
 @Requires("_sensors", "java:/temper.sensors.TemperatureService",
           aggregate=True, optional=True)
-@Requires("_listeners", "java:/temper.sensors.AggregatorListener",
-          aggregate=True, optional=True)
 @Provides("java:/temper.aggregator.AggregatorService")
 class Aggregator(object):
     """
@@ -50,8 +48,7 @@ class Aggregator(object):
         self._history_size = 0
         self._name = ""
         self._poll_delta = 0
-        self._sensors = []
-        self._listeners = []
+        self._sensors = []        
 
         # The values history (sensor -> list of dictionaries)
         self._history = {}
@@ -84,6 +81,18 @@ class Aggregator(object):
         with self._lock:
             return self._history.get(sensor, None)
 
+
+    def get_sensor_lastentry(self, sensor):
+        """
+        Retrieves the last known history entry for the given sensor
+
+        :param sensor: The name of the sensor
+        :return: The las history entry of the sensor. Can be None.
+        """
+        with self._lock:
+            sensor_history = self._history.setdefault(sensor, [])
+            if sensor_history:
+                return sensor_history[0]
 
     def get_sensors(self):
         """
@@ -152,34 +161,7 @@ class Aggregator(object):
                                       "time": int(time.time() * 1000),
                                       "value": value,
                                       "unit": unit,
-                                      "javaClass": HISTORY_ENTRY_CLASS})
-
-    def _fire_new_sensor(name, location):
-        """
-        Informes Aggregator Listeners about the new available Temperature sensor
-        """
-        for listener in self._listeners:
-            listener.newSensor(name, location)
-
-
-    def _fire_retired_sensor(name, location):
-        """
-        Informes Aggregator Listeners about the gone Temperature sensor
-        """
-        for listener in self._listeners:
-            listener.retiredSensor(name, location)
-
-    @BindField("_sensors")
-    def bindSensor(self, field, svc, ref):
-        name = svc.getName()
-        location = ref.get_property("location")
-        _fire_new_sensor(name, location)
-
-    @UnbindField("_sensors")
-    def bindSensor(self, field, svc, ref):
-        name = svc.getName()
-        location = ref.get_property("location")
-        _fire_retired_sensor(name, location)    
+                                      "javaClass": HISTORY_ENTRY_CLASS})  
 
     @Bind
     def bind(self, svc, ref):
@@ -240,6 +222,7 @@ class Aggregator(object):
     # Java API compliance
     getHistory = get_history
     getSensorHistory = get_sensor_history
+    getSensorLastEntry = get_sensor_lastentry
     getSensors = get_sensors
     getActiveSensors = get_active_sensors
 

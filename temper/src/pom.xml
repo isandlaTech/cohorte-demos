@@ -27,8 +27,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>temperature-service</module>
-		<module>aggregator-service</module>
-		<module>java-sensor</module>
+		<module>temperature_service</module>
+		<module>aggregator_service</module>
+		<module>java_sensor</module>
 	</modules>
 </project>

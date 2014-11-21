@@ -45,6 +45,7 @@ public class JavaTemperatureSensor implements TemperatureService {
      * 
      * @see temper.sensors.TemperatureService#getName()
      */
+    @Override
     public String getName() {
 
         return pName;
@@ -55,6 +56,7 @@ public class JavaTemperatureSensor implements TemperatureService {
      * 
      * @see temper.sensors.TemperatureService#getUnit()
      */
+    @Override
     public String getUnit() {
 
         return "°C";
@@ -65,6 +67,7 @@ public class JavaTemperatureSensor implements TemperatureService {
      * 
      * @see temper.sensors.TemperatureService#getValue()
      */
+    @Override
     public synchronized double getValue() {
 
         if (pLast == 0) {

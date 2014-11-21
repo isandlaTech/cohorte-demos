@@ -9,7 +9,7 @@
 				 */
 				"name" : "PythonSensor",
 				"factory" : "python-sensor-factory",
-				"isolate" : "temper.python",
+				/*"isolate" : "temper.python",*/
 				"node" : "python-sensor-node",
 				"properties" : {
 					"temper.value.min" : -5,
@@ -21,7 +21,7 @@
 				 */
 				"name" : "PythonSensor-raspi",
 				"factory" : "python-sensor-factory",
-				"isolate" : "temper.raspi",
+				/*"isolate" : "temper.raspi",*/
 				"node" : "raspberry-node"
 			}, {
 				/**
@@ -29,7 +29,7 @@
 				 */
 				"name" : "JavaSensor",
 				"factory" : "java-sensor-factory",
-				"isolate" : "temper.java",
+				/*"isolate" : "temper.java",*/
 				"node" : "java-sensor-node"
 			}, {
 				/**
@@ -38,7 +38,7 @@
 				"name" : "Aggregator",
 				"factory" : "aggregator-factory",
 				"language" : "python",
-				"isolate" : "aggregation",
+				/*"isolate" : "aggregation",*/
 				"node" : "gateway-node",
 				"properties" : {
 					"poll.delta" : 1

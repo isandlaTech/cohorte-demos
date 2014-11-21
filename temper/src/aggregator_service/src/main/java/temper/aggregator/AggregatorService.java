@@ -37,6 +37,15 @@ public interface AggregatorService {
     List<HistoryEntry> getSensorHistory(String aSensorName);
 
     /**
+     * Retrieves the last history entry of the given sensor, or null
+     * 
+     * @param aSensorName
+     *            Name of the sensor
+     * @return The last known history entry of the sensor or null
+     */
+    HistoryEntry getSensorLastEntry(String aSensorName);
+
+    /**
      * Retrieves the names of the sensors visible in the history
      * 
      * @return the names of the sensors
