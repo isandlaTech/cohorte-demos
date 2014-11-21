@@ -4,8 +4,8 @@
         "http"
     ],
     "node": {
-        "top-composer": false,
         "shell-admin": 0,
-        "name": "java-sensor-node"
+        "name": "java-sensor-node",
+        "top-composer": false
     }
 }
