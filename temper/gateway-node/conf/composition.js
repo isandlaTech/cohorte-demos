@@ -3,35 +3,7 @@
     "root": {
         "name": "temper-demo-composition",
         "components": [
-            {
-				/**
-				 * Python sensor
-				 */
-				"name" : "PythonSensor",
-				"factory" : "python-sensor-factory",
-				/*"isolate" : "temper.python",*/
-				"node" : "python-sensor-node",
-				"properties" : {
-					"temper.value.min" : -5,
-					"temper.value.max" : 45
-				}
-			}, {
-				/**
-				 * Raspberry Pi sensor
-				 */
-				"name" : "PythonSensor-raspi",
-				"factory" : "python-sensor-factory",
-				/*"isolate" : "temper.raspi",*/
-				"node" : "raspberry-node"
-			}, {
-				/**
-				 * Java sensor
-				 */
-				"name" : "JavaSensor",
-				"factory" : "java-sensor-factory",
-				/*"isolate" : "temper.java",*/
-				"node" : "java-sensor-node"
-			}, {
+			{
 				/**
 				 * Aggregator component
 				 */
@@ -58,6 +30,46 @@
 				"wires" : {
 					"_aggregator" : "aggregator"
 				}
+			},  {
+				/**
+				 * Python sensor
+				 */
+				"name" : "PythonSensor",
+				"factory" : "python-sensor-factory",
+				/*"isolate" : "temper.python",*/
+				"node" : "gateway-node",
+				"properties" : {
+					"temper.value.min" : -5,
+					"temper.value.max" : 45
+				}
+			}, {
+				/**
+				 * Python sensor
+				 */
+				"name" : "PythonSensor2",
+				"factory" : "python-sensor-factory",
+				/*"isolate" : "temper.python",*/
+				"node" : "python-sensor-node",
+				"properties" : {
+					"temper.value.min" : -5,
+					"temper.value.max" : 45
+				}
+			},{
+				/**
+				 * Raspberry Pi sensor
+				 */
+				"name" : "PythonSensor-raspi",
+				"factory" : "python-sensor-factory",
+				/*"isolate" : "temper.raspi",*/
+				"node" : "raspberry-node"
+			}, {
+				/**
+				 * Java sensor
+				 */
+				"name" : "JavaSensor",
+				"factory" : "java-sensor-factory",
+				/*"isolate" : "temper.java",*/
+				"node" : "java-sensor-node"
 			}
         ]
     }

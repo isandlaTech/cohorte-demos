@@ -13,4 +13,4 @@ echo "CURRENTNODE_HOME =[${CURRENTNODE_HOME}]"
 
 cd "${CURRENTNODE_HOME}"
 
-./run --app-id temper --top-composer true
+./run --app-id temper --top-composer true -d
