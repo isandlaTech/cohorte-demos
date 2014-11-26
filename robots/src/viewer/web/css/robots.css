@@ -1,0 +1,20 @@
+table, td, th {
+    border: 1px solid #ddd;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.robot {
+	position:absolute; 
+	z-index:2;
+}
+
+.target {
+	position:absolute; 
+	z-index:1;
+}
