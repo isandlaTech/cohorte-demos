@@ -4,8 +4,11 @@
         "http"
     ],
     "node": {
-        "name": "controller-node",
+        "name": "viewer-node",
         "composition-file": "composition.js",
-        "shell-admin": 0
+        "shell-admin": 0,
+        "top-composer": true,
+        "auto-start": true,
+        "web-admin": 9000
     }
 }

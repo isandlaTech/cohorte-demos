@@ -7,15 +7,30 @@ import json
 
 
 @ComponentFactory("viewer_factory")
-@Provides(specifications='pelix.http.servlet')
+@Provides('pelix.http.servlet')
 @Requires("_controller", "controller.service", optional=True)
+@Requires("_robots", "robot.service", optional=True, aggregate=True)
 @Property('_path', 'pelix.http.path', "/robots")
 @Property('_reject', pelix.remote.PROP_EXPORT_REJECT, ['pelix.http.servlet'])
 class Viewer(object):
 
     def __init__(self):
+        self._path = None
         self._controller = None
-        self._path = None  
+        self._robots = []
+
+    def get_robots_positions(self):
+        robots_list = {"robots": []}
+        if self._robots:
+            for robot in self._robots:
+                r = {"name": robot.get_name(), "x": robot.get_position()["x"], "y": robot.get_position()["y"]}
+                robots_list["robots"].append(r)
+        return robots_list
+
+    def change_target_position(self, x, y):
+        if self._controller:
+            self._controller.set_target_position(x, y)
+        return {"x": x, "y": y}
 
     """
     Resources -----------------------------------------------------
@@ -61,7 +76,8 @@ class Viewer(object):
     def sendJson(self, data, response):
         result = json.dumps(data, sort_keys=False,
                             indent=4, separators=(',', ': '))
-        response.send_content(data["meta"]["code"], result, "application/json")
+        print(result)
+        response.send_content(200, result, "application/json")
 
     """
     Get -----------------------------------------------------------
@@ -90,17 +106,18 @@ class Viewer(object):
                         if str(parts[2]).lower() == "robots":
                             # show robots
                             if self._controller:
-                                robots = self._controller.get_robots_positions()
+                                robots = self.get_robots_positions()
                                 self.sendJson(robots, response)
                     elif len(parts) == 4:
                         if str(parts[2]).lower() == "target":
                             target = str(parts[3]).lower()
-                            tmp = target.split("-")
-                            x = tmp[0]
-                            y = tmp[1]
-                            if self._controller:
-                                # change target position
-                                t = self._controller.change_target_position(x, y)
-                                self.sendJson(t, response)
+                            if target:
+                                tmp = target.split("a")
+                                x = tmp[0]
+                                y = tmp[1]
+                                if self._controller:
+                                    # change target position
+                                    t = self.change_target_position(x, y)
+                                    self.sendJson(t, response)
 
 
