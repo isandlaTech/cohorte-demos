@@ -13,4 +13,4 @@ echo "CURRENTNODE_HOME =[${CURRENTNODE_HOME}]"
 
 cd "${CURRENTNODE_HOME}"
 
-./run --use-cache false
+./run --use-config xmpp_robot2.js

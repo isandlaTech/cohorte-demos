@@ -1,4 +1,12 @@
 **/var/**
 **/var/*
 **/target/**
-
+**/robot1-node/conf/**
+**/robot2-node/conf/**
+**/robot1-node/repo/**
+**/robot2-node/repo/**
+**/controller-node/conf/boot-common.js
+**/controller-node/conf/boot-forker.js
+**/controller-node/conf/composer/**
+**/controller-node/conf/herald/**
+**/controller-node/repo/**

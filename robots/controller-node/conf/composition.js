@@ -4,18 +4,25 @@
         "name": "robots-composition",
         "components": [
             {
-				"name" : "Viewer",
-				"factory" : "viewer_factory",
-				"node" : "controller-node"
-			}, {
-				"name" : "Controller",
-				"factory" : "controller_factory",
-				"node" : "controller-node"
-			}, {
-				"name" : "Robot-1",
-				"factory" : "robot_factory",
-				"node" : "robot-node"
-			}
+            	"node": "controller-node",
+            	"factory": "controller_factory",
+            	"name": "Controller"
+            }, 
+            {
+            	"node": "controller-node",
+            	"factory": "viewer_factory",
+            	"name": "Viewer"
+            },
+            {
+            	"node": "robot1-node",
+            	"factory": "robot_factory",
+            	"name": "Robot_1"
+            },
+            {
+            	"node": "robot2-node",
+            	"factory": "robot_factory",
+            	"name": "Robot_2"
+            }
         ]
     }
 }

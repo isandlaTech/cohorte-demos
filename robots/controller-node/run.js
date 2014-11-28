@@ -4,8 +4,12 @@
         "http"
     ],
     "node": {
-        "name": "controller-node",
+        "top-composer": true,
+        "shell-admin": 0,
+        "use-cache": false,
+        "auto-start": true,
         "composition-file": "composition.js",
-        "shell-admin": 0
+        "name": "controller-node",
+        "web-admin": 9000
     }
 }

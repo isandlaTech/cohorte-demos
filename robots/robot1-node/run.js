@@ -1,11 +1,13 @@
 {
-    "transport": [
-        "http"
-    ],
     "application-id": "robots",
     "node": {
-        "name": "robot1-node",
+        "shell-admin": 0,
         "top-composer": false,
-        "shell-admin": 0
-    }
+        "use-cache": false,
+        "name": "robot1-node",
+        "web-admin": 0
+    },
+    "transport": [
+        "http"
+    ]
 }

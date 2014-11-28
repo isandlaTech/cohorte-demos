@@ -32,32 +32,20 @@
 					<plugin>
 						<artifactId>maven-antrun-plugin</artifactId>
 						<configuration>
-							<tasks>
-								<copy todir="viewer-node/repo">
-								    <fileset dir="src/">								        
-								        <include name="viewer/**"/>
-								        <include name="controller/**"/>
-								        <include name="robot/**"/>
-								    </fileset>
-								</copy>
+							<tasks>								
                                 <copy todir="controller-node/repo">
                                     <fileset dir="src/">
                                         <include name="viewer/**"/>
                                         <include name="controller/**"/>
-                                        <include name="robot/**"/>
                                     </fileset>
                                 </copy>
                                 <copy todir="robot1-node/repo">
                                     <fileset dir="src/">
-                                        <include name="viewer/**"/>
-                                        <include name="controller/**"/>
                                         <include name="robot/**"/>
                                     </fileset>
                                 </copy>
                                 <copy todir="robot2-node/repo">
                                     <fileset dir="src/">
-                                        <include name="viewer/**"/>
-                                        <include name="controller/**"/>
                                         <include name="robot/**"/>
                                     </fileset>
                                 </copy>
@@ -96,23 +84,15 @@
 						<configuration>
 							<filesets>
 								<fileset>
-									<directory>viewer-node/repo</directory>
-									<excludes><exclude>README*</exclude></excludes>
-									<followSymlinks>false</followSymlinks>
-								</fileset>
-								<fileset>
 									<directory>controller-node/repo</directory>
-									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
 									<directory>robot1-node/repo</directory>
-									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 								<fileset>
 									<directory>robot2-node/repo</directory>
-									<excludes><exclude>README*</exclude></excludes>
 									<followSymlinks>false</followSymlinks>
 								</fileset>
 							</filesets>
