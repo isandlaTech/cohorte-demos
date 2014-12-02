@@ -1,0 +1,7 @@
+**/var/**
+**/var/*
+**/target/**
+**/led-gateway/conf/boot-common.js
+**/led-gateway/conf/boot-forker.js
+**/led-gateway/conf/composer/**
+**/led-gateway/conf/herald/**
