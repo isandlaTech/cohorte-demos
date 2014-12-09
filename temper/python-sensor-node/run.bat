@@ -1,5 +1,5 @@
 @echo off
-if "$COHORTE_HOME" == "" (
+if "%COHORTE_HOME%" == "" (
   echo [ERROR] the system environment variable COHORTE_HOME is not defined!
   exit /b 1
 )
