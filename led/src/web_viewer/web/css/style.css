@@ -108,7 +108,7 @@ table {
 body {
   font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #404040;
-  background: white;
+  background: #00979c;
 }
 
 .container {
@@ -187,7 +187,7 @@ body {
   opacity: 0;
 }
 .switch-input:checked ~ .switch-label {
-  background: #47a8d8;
+  background: #EA2C2C; /* #47a8d8; */
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .switch-input:checked ~ .switch-label:before {
@@ -238,4 +238,38 @@ body {
 
 .switch-green > .switch-input:checked ~ .switch-label {
   background: #4fb845;
+}
+
+
+/* -------------------- */
+.title {
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.led-name {
+  text-transform: uppercase; 
+  padding-top: 3px;
+}
+
+.led {
+  background-color: white;
+  height: 35px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  border: 2px solid;
+  border-color: #00979c;
+  border-radius: 25px;
+}
+
+.led-name {
+  float: left;
+}
+
+.led-switcher {
+  float: right;
 }

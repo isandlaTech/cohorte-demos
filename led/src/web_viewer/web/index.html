@@ -6,19 +6,31 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Simple Led Switch</title>
+  <title>COHORTE LED DEMO</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-1.11.1.min.js"></script>
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
   <div class="container">
-    Arduino Led :  
-    <label id="switcher-zone" class="switch">
+    <div class="title">
+    COHORTE LED DEMO
+    </div> 
+    <div id="leds-zone">
+    </div>
+
+    <!--
+    <div class="led">
+      <div class="led-name">ARDUINO_UNO_LED</div>
+      <div class="led-switcher">
+      <label id="switcher-zone" class="switch">
       <input id="switcher" type="checkbox" class="switch-input">
       <span class="switch-label" data-on="On" data-off="Off"></span>
       <span class="switch-handle"></span>
-    </label>
+      </label>
+      </div>
+    </div>
+    -->
   </div>
 
 <script src="js/led.js"></script>

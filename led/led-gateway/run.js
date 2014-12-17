@@ -1,16 +1,23 @@
 {
     "transport": [
-        "http"
+        "xmpp"
     ],
-    "node": {
-        "web-admin": 9000,
-        "interpreter": "python2",
-        "name": "led-gateway",
-        "shell-admin": 0,
-        "top-composer": true,
-        "composition-file": "composition.js",
-        "use-cache": false,
-        "auto-start": true
+    "transport-xmpp": {
+        "xmpp-password": "Bender",
+        "xmpp-server": "charmanson.isandlatech.com",
+        "xmpp-jid": "bot@charmanson.isandlatech.com",
+        "xmpp-port": 5222
     },
-    "application-id": "led"
+    "application-id": "led",
+    "node": {
+        "composition-file": "composition.js",
+        "auto-start": true,
+        "top-composer": true,
+        "use-cache": false,
+        "interpreter": "python3",
+        "name": "led-gateway",
+        "web-admin": 9000,
+        "recomposition-delay": 120,
+        "shell-admin": 9001
+    }
 }
