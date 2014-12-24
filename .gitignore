@@ -28,7 +28,7 @@ felix-cache/
 RemoteSystemsTempFiles/
 
 # Binaries
-*.tar.gz
+# *.tar.gz
 bin/
 target/
 *.dat
