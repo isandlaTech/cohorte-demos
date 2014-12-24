@@ -1,5 +1,6 @@
 {
     "transport": [
+        "http",
         "xmpp"
     ],
     "transport-xmpp": {
@@ -9,6 +10,9 @@
         "xmpp-port": 5222
     },
     "application-id": "led",
+    "transport-http": {
+        "http-ipv": 6
+    },
     "node": {
         "composition-file": "composition.js",
         "auto-start": true,

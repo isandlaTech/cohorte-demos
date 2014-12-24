@@ -5,14 +5,16 @@
         "top-composer": false,
         "interpreter": "python",
         "web-admin": 0,
-        "recomposition-delay": 50,
+        "recomposition-delay": 150,
         "shell-admin": 0
     },
     "application-id": "led",
-    "transport-http": {
-        "http-ipv": 4
+    "transport-xmpp": {
+      "xmpp-server": "charmanson.isandlatech.com",
+      "xmpp-jid": "bot@charmanson.isandlatech.com",
+      "xmpp-port": 5222
     },
     "transport": [
-        "http"
+        "xmpp"
     ]
 }

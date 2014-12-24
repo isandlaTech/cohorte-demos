@@ -4,7 +4,7 @@
   "use-cache": "true",
   "name": "led-arduino-yun",
   "interpreter": "python",
-  "recomposition-delay": 220
+  "recomposition-delay": 120
  },
  "transport": [ "xmpp" ],
  "transport-xmpp": {    
@@ -13,3 +13,4 @@
     "xmpp-port": 5222
  }
 }
+

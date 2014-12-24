@@ -1,13 +1,15 @@
-
+{
     "application-id": "led",
     "node": {
-        "name": "led-desktop",
-        "recomposition-delay": 50
+	"recomposition-delay": 120,
+        "name": "led-desktop"
     },
     "transport": [
-        "http"
+        "xmpp"
     ],
-    "transport-http": {
-        "http-ipv": 6
+    "transport-xmpp": {
+        "xmpp-server": "charmanson.isandlatech.com",
+        "xmpp-jid": "bot@charmanson.isandlatech.com",
+        "xmpp-port": 5222
     }
 }
