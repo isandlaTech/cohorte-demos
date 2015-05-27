@@ -5,6 +5,7 @@ from pelix.ipopo.decorators import ComponentFactory, Provides, Requires, Propert
 import pelix.remote
 import os
 import json
+import time
 
 import logging
 _logger = logging.getLogger("viewer.viewer")
@@ -12,7 +13,7 @@ _logger = logging.getLogger("viewer.viewer")
 @ComponentFactory("led_viewer_factory")
 @Provides('pelix.http.servlet')
 @Requires("_leds", "java:/led.services.LedService", optional=True, aggregate=True)
-@Property('_path', 'pelix.http.path', "/leds")
+@Property('_path', 'pelix.http.path', "/")
 @Property('_reject', pelix.remote.PROP_EXPORT_REJECT, ['pelix.http.servlet'])
 class Viewer(object):
 
@@ -20,9 +21,14 @@ class Viewer(object):
         self._path = None     
         self._leds = []
         self._leds_map = {}
+        self._leds_list_lastupdate = time.time()
+
+    def get_lastupdate(self):
+        result = {"lastupdate" : self._leds_list_lastupdate}
+        return result
 
     def get_leds(self):
-        _logger.critical("get_leds")
+        #_logger.critical("get_leds")
         result = {"leds": []}
         for led in self._leds_map:            
             state = self._leds_map[led]["svc"].get_state()            
@@ -30,7 +36,7 @@ class Viewer(object):
         return result
 
     def get_led(self, led):
-        _logger.critical("get_led %s", led)
+        #_logger.critical("get_led %s", led)
         result = {}        
         if led in self._leds_map:
             result["name"] = led
@@ -41,7 +47,7 @@ class Viewer(object):
             return {"name": "unknown", "state": "unknown"}
 
     def send_action(self, led, action):
-        _logger.critical("send_action %s to led: %d", action, led)
+        #_logger.critical("send_action %s to led: %d", action, led)
         result = {}
         _led = self._leds_map[led]
         if _led:
@@ -56,21 +62,25 @@ class Viewer(object):
 
     @BindField('_leds')
     def on_bind_led(self, field, svc, svc_ref):
-        _logger.critical("binding a new led...")
+        #_logger.critical("binding a new led...")
         props = svc_ref.get_properties()        
         led_name = props.get("led.name")
+        led_name = str(led_name).lower()
         self._leds_map[led_name] = {}
         self._leds_map[led_name]["svc_ref"] = svc_ref
-        self._leds_map[led_name]["svc"] = svc        
+        self._leds_map[led_name]["svc"] = svc   
+        self._leds_list_lastupdate = time.time()     
         _logger.critical("name: %s", led_name)
 
     @UnbindField('_leds')
     def on_unbind_led(self, field, svc, svc_ref):
-        _logger.critical("unbinding a led...")
+        #_logger.critical("unbinding a led...")
         props = svc_ref.get_properties()    
         led_name = props.get("led.name")
+        led_name = str(led_name).lower()
         del self._leds_map[led_name]
-        _logger.critical("name: %s", led_name)
+        self._leds_list_lastupdate = time.time()
+        #_logger.critical("name: %s", led_name)
 
 
     """
@@ -107,14 +117,14 @@ class Viewer(object):
 
     def show_main_page(self, request, response):
         rel_path = self._path
-        while rel_path[0] == '/':
+        while len(rel_path) > 0 and rel_path[0] == '/':
             rel_path = rel_path[1:]
 
         if not rel_path:
-            rel_path = '.'
+            rel_path = ''
 
         content = "<html><head><meta http-equiv='refresh' content='0; URL=" #+ self._path 
-        content += rel_path + "/static/web/index.html'/></head><body></body></html>"
+        content += rel_path + "static/web/index.html'/></head><body></body></html>"        
         response.send_content(200, content)
 
     def show_error_page(self, request, response):
@@ -142,42 +152,49 @@ class Viewer(object):
         """
         query = request.get_path()
         # prepare query path: remove first and last '/' if exists
-        if query[0] == '/':
+        while len(query) > 0 and query[0] == '/':
             query = query[1:]
-        if query[-1] == '/':
+        while len(query) > 0 and query[-1] == '/':
             query = query[:-1]
         # get parts of the url
-        parts = str(query).split('/')
-        if str(parts[0]) == "leds":
-
-            if len(parts) == 1:
+        
+        if len(query) == 0:
+            self.show_main_page(request, response)
+        else:
+            parts = str(query).split('/')
+            if len(parts) == 0:
                 # show main page
                 self.show_main_page(request, response)
                 #self.show_error_page(request, response)
-            elif len(parts) > 1:
-                if str(parts[1]) == "static":
-                    if len(parts) > 2:
-                        self.load_resource('/'.join(parts[2:]), request, response)
+            elif len(parts) > 0:
+                if str(parts[0]) == "static":
+                    if len(parts) > 1:
+                        self.load_resource('/'.join(parts[1:]), request, response)
                     else:
                         self.show_error_page(request, response)
 
-                elif str(parts[1]) == "api":                    
+                elif str(parts[0]) == "api":                    
 
-                    if len(parts) == 3:
-                        if str(parts[2]).lower() == "leds":
+                    if len(parts) == 2:
+                        if str(parts[1]).lower() == "leds":
                             t = self.get_leds()
                             self.sendJson(t, response)
-                    elif len(parts) == 4:
-                        if str(parts[2]).lower() == "leds":
-                            led = str(parts[3]).lower()
+                        elif str(parts[1]).lower() == "lastupdate":
+                            t = self.get_lastupdate()
+                            self.sendJson(t, response)
+                    elif len(parts) == 3:
+                        if str(parts[1]).lower() == "leds":
+                            led = str(parts[2]).lower()
                             t = self.get_led(led)
                             self.sendJson(t, response)
 
-                    elif len(parts) == 5:
-                        if str(parts[2]).lower() == "leds":
-                            led = str(parts[3]).lower()
-                            action = str(parts[4]).lower()                                                     
+                    elif len(parts) == 4:
+                        if str(parts[1]).lower() == "leds":
+                            led = str(parts[2]).lower()
+                            action = str(parts[3]).lower()                                                     
                             t = self.send_action(led, action)
                             self.sendJson(t, response)
+
+
 
 

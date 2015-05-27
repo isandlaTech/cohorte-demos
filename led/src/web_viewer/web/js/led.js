@@ -10,14 +10,14 @@ var leds = null;
 
 function set_led_on(led) {
 	console.log("actual state: ON")	
-	$.getJSON( "/leds/api/leds/"+led+"/on", function( data ) {		
+	$.getJSON( "/api/leds/"+led+"/on", function( data ) {		
 		$('#switcher-'+led).attr('data-updating', "no");
 	});
 }
 
 function set_led_off(led) {	
   	console.log("actual state: OFF")	  
-  	$.getJSON( "/leds/api/leds/"+led+"/off", function( data ) {  	
+  	$.getJSON( "/api/leds/"+led+"/off", function( data ) {  	
   		$('#switcher-'+led).attr('data-updating', "no");
 	});
 }
@@ -58,7 +58,7 @@ function update_led_actions(led) {
 
 function refresh() {	
 	
-	$.getJSON( "/leds/api/lastupdate", function( data ) {
+	$.getJSON( "/api/lastupdate", function( data ) {
 		var tmp = data['lastupdate'];
 		if (lastupdate == null) {
 			lastupdate = tmp;
@@ -79,7 +79,7 @@ function refresh() {
 var timer;
 
 function load_leds() {	
-	$.getJSON( "/leds/api/leds", function( data ) {
+	$.getJSON( "/api/leds", function( data ) {
         frame = ""
         leds = data;
         for (var i in data['leds']) {
@@ -109,7 +109,7 @@ function refresh_leds() {
 	if (leds != null) {
 		for (var i in leds['leds']) {			
 	        var led_name = leds['leds'][i]["name"];	             	        
-	        $.getJSON( "/leds/api/leds/"+led_name, function( data ) {
+	        $.getJSON( "/api/leds/"+led_name, function( data ) {
 	        	var led_state = data["state"];	 
 	        	var name = data["name"];  
 	        	var state = $('#switcher-'+name).attr('data-state');
