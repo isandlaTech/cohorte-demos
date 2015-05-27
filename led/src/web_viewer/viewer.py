@@ -5,7 +5,6 @@ from pelix.ipopo.decorators import ComponentFactory, Provides, Requires, Propert
 import pelix.remote
 import os
 import json
-import time
 
 import logging
 _logger = logging.getLogger("viewer.viewer")
@@ -21,14 +20,9 @@ class Viewer(object):
         self._path = None     
         self._leds = []
         self._leds_map = {}
-        self._leds_list_lastupdate = time.time()
-
-    def get_lastupdate(self):
-        result = {"lastupdate" : self._leds_list_lastupdate}
-        return result
 
     def get_leds(self):
-        #_logger.critical("get_leds")
+        _logger.critical("get_leds")
         result = {"leds": []}
         for led in self._leds_map:            
             state = self._leds_map[led]["svc"].get_state()            
@@ -36,7 +30,7 @@ class Viewer(object):
         return result
 
     def get_led(self, led):
-        #_logger.critical("get_led %s", led)
+        _logger.critical("get_led %s", led)
         result = {}        
         if led in self._leds_map:
             result["name"] = led
@@ -47,7 +41,7 @@ class Viewer(object):
             return {"name": "unknown", "state": "unknown"}
 
     def send_action(self, led, action):
-        #_logger.critical("send_action %s to led: %d", action, led)
+        _logger.critical("send_action %s to led: %d", action, led)
         result = {}
         _led = self._leds_map[led]
         if _led:
@@ -62,25 +56,21 @@ class Viewer(object):
 
     @BindField('_leds')
     def on_bind_led(self, field, svc, svc_ref):
-        #_logger.critical("binding a new led...")
+        _logger.critical("binding a new led...")
         props = svc_ref.get_properties()        
         led_name = props.get("led.name")
-        led_name = str(led_name).lower()
         self._leds_map[led_name] = {}
         self._leds_map[led_name]["svc_ref"] = svc_ref
-        self._leds_map[led_name]["svc"] = svc   
-        self._leds_list_lastupdate = time.time()     
+        self._leds_map[led_name]["svc"] = svc        
         _logger.critical("name: %s", led_name)
 
     @UnbindField('_leds')
     def on_unbind_led(self, field, svc, svc_ref):
-        #_logger.critical("unbinding a led...")
+        _logger.critical("unbinding a led...")
         props = svc_ref.get_properties()    
         led_name = props.get("led.name")
-        led_name = str(led_name).lower()
         del self._leds_map[led_name]
-        self._leds_list_lastupdate = time.time()
-        #_logger.critical("name: %s", led_name)
+        _logger.critical("name: %s", led_name)
 
 
     """
@@ -104,6 +94,7 @@ class Viewer(object):
         ".html": "text/html",
         ".js": "application/javascript",
         ".jpeg": "image/jpeg",
+        ".jpg": "image/jpeg",
         ".png": "image/png",
         ".gif": "image/gif"
         }
@@ -115,8 +106,15 @@ class Viewer(object):
         return response.send_content(200, content, mimetype)
 
     def show_main_page(self, request, response):
-        content = "<html><head><meta http-equiv='refresh' content='0; URL=" + self._path 
-        content += "/static/web/index.html'/></head><body></body></html>"
+        rel_path = self._path
+        while rel_path[0] == '/':
+            rel_path = rel_path[1:]
+
+        if not rel_path:
+            rel_path = '.'
+
+        content = "<html><head><meta http-equiv='refresh' content='0; URL=" #+ self._path 
+        content += rel_path + "/static/web/index.html'/></head><body></body></html>"
         response.send_content(200, content)
 
     def show_error_page(self, request, response):
@@ -168,9 +166,6 @@ class Viewer(object):
                     if len(parts) == 3:
                         if str(parts[2]).lower() == "leds":
                             t = self.get_leds()
-                            self.sendJson(t, response)
-                        elif str(parts[2]).lower() == "lastupdate":
-                            t = self.get_lastupdate()
                             self.sendJson(t, response)
                     elif len(parts) == 4:
                         if str(parts[2]).lower() == "leds":
