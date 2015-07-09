@@ -2,6 +2,6 @@
 {
     "import-files" : [ "boot-common.js" ],
     "properties" : {
-        "herald.application.id" : "led"
+        "herald.application.id" : "led-isandlatech-demo-test"
     }
 }

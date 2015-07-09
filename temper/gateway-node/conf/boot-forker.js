@@ -5,7 +5,7 @@
     {
         "name" : "pelix-http-service",
         "properties" : {
-            "pelix.http.port" : 9000
+            "pelix.http.port" : 8000
         }
     }, {
         "name" : "pelix-remote-shell",

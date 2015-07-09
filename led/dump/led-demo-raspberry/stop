@@ -1,0 +1,5 @@
+#! /bin/bash
+
+echo "Stopping cohorte led demo"
+killall python
+

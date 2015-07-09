@@ -1,0 +1,7 @@
+#! /bin/bash
+
+echo "Starting cohorte led demo"
+COHORTE_HOME="/home/pi/cohorte/dist/cohorte-1.0.0-20141216.234517-57-python-distribution"
+export COHORTE_HOME
+cd /home/pi/cohorte/demos/led-raspberry/
+./run

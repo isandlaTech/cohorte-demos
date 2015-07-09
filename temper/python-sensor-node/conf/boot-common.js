@@ -2,6 +2,6 @@
 {
     "import-files" : [ "boot-common.js" ],
     "properties" : {
-        "herald.application.id" : "temper"
+        "herald.application.id" : "tototi"
     }
 }

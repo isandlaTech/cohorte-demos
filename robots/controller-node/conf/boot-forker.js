@@ -10,7 +10,7 @@
     }, {
         "name" : "pelix-remote-shell",
         "properties" : {
-            "pelix.shell.port" : 9001
+            "pelix.shell.port" : 0
         }
     }
     ]
