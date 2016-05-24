@@ -1,0 +1,13 @@
+[Unit]
+Description=Demo Led
+Requires=network.target
+After=dhcpcd.service
+
+[Service]
+Type=forking
+WorkingDirectory=/home/pi/Documents/PiFace-Control-Cohorte/piface-node/
+ExecStart=/home/pi/Documents/PiFace-Control-Cohorte/piface-node/run
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Led Camera        
+Requires=network.target
+After=dhcpcd.service
+
+[Service]
+Type=forking
+WorkingDirectory=/home/pi/led-raspberry-camera/
+ExecStart=/home/pi/led-raspberry-camera/run
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target

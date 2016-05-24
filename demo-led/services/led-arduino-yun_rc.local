@@ -1,0 +1,9 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+wifi-live-or-reset
+boot-complete-notify
+
+sh /root/cohorte/demos/led-arduino-yun/run --app-id led --base /root/cohorte/demos/led-arduino-yun/ &> /tmp/logCohorte &
+
+exit 0
