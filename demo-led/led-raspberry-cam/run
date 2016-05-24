@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export COHORTE_HOME=/home/pi/cohorte-1.1.2
+export PATH=$COHORTE_HOME/bin:$PATH #COHORTE_PATH
+
+if test -z "$COHORTE_HOME"
+then
+  echo
+  echo "[ERROR] the system environment variable COHORTE_HOME is not defined!"
+  echo
+  exit
+fi
+
+bash $COHORTE_HOME/bin/cohorte-start-node --base /home/pi/led-raspberry-camera --use-config /home/pi/led-raspberry-camera/run.js $*

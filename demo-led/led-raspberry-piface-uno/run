@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export COHORTE_HOME="/home/pi/Documents/cohorte-1.1.2" #COHORTE_HOME
+export PATH=$COHORTE_HOME/bin:$PATH #COHORTE_PATH
+
+if test -z "$COHORTE_BASE"
+then
+  COHORTE_BASE=$(pwd)
+fi
+bash $COHORTE_HOME/bin/cohorte-start-node --base /home/pi/Documents/PiFace-Control-Cohorte/piface-node --use-config /home/pi/Documents/PiFace-Control-Cohorte/piface-node/run.js -d -v -c --app-id led $* &

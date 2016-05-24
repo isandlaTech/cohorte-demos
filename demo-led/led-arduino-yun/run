@@ -1,0 +1,12 @@
+#!/bin/bash
+export COHORTE_HOME='/root/cohorte-1.1.2/'
+
+if test -z "$COHORTE_HOME"
+then
+  echo
+  echo "[ERROR] the system environment variable COHORTE_HOME is not defined!"
+  echo
+  exit
+fi
+
+sh $COHORTE_HOME/bin/cohorte-start-node $*
