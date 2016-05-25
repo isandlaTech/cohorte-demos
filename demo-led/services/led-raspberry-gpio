@@ -1,12 +1,12 @@
 #! /bin/sh
 ### BEGIN INIT INFO
-# Provides:          Agilium NG Server
+# Provides:          DEMO-LED DAEMON
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Agilium NG Server
-# Description:       Agilium NG Server
+# Short-Description: DEMO-LED DAEMON
+# Description:       DEMO-LED DAEMON
 ### END INIT INFO
  
 ### service installer will place here DIR variable containing the path to cohorte node
