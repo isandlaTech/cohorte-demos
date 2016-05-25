@@ -35,4 +35,4 @@ sudo update-rc.d <your file> defaults
 ---------------------------------------------------
 This file is to launch programs at startup on the Arduino YUN.
 You have to rename this file 'rc.local' and put it into '/etc/' folder.
-If you have made any changes in this file before copy/paste the difference.
+If you have made any changes in this file before, copy/paste the difference.
