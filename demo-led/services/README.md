@@ -20,6 +20,15 @@ next command in the terminal : sudo systemctl enable [name of the .service file]
 Example : sudo systemctl enable led-raspberry-piface-uno.service
 
 2) Instructions for led-raspberry-gpio :
+This is the old way to run a program at startup with init.d 
+You have to copy the entire file and then execute these commands :
+
+sudo cp <your file> /etc/init.d/
+sudo chmod +x /etc/init.d/<your file>
+sudo update-rc.d <your file> defaults
 
 
-3) Instructions for .local file :
+3) Instructions for led-arduino-yun_rc.local file :
+This file is to launch programs at startup on the Arduino YUN.
+You have to rename this file 'rc.local' and put it into '/etc/' folder.
+If you have made any changes in this file before copy/paste the difference.
