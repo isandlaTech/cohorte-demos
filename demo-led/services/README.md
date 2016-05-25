@@ -8,7 +8,7 @@ This folder contains the services of each node of the application demo-led.
 
 1. Instructions for the .services files :
 ------------------------------------------
-There is two .services files, there are for two Raspberry Pi using the systemd
+There is two .services files for two Raspberry Pi using the systemd
 functionnality.
 One file for the camera Raspberry and one for the Piface one.
 
@@ -22,7 +22,7 @@ next command in the terminal : sudo systemctl enable [name of the .service file]
 
 2. Instructions for led-raspberry-gpio :
 ----------------------------------------
-This is the old way to run a program at startup with init.d. 
+This is the old way to run a program at startup with init.d.
 You have to copy the entire file and then execute these commands :
 
 ```
