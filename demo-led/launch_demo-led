@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --name demo-led2 -d --privileged --cap-add SYS_ADMIN -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 -p 9001:9001 -p 40000:40000 cohorte/demo-led

@@ -1,0 +1,13 @@
+[Unit]
+Description=Docker Led Service
+Requires=network.target
+After=dhcpcd.service docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt
+ExecStart=/opt/launch_demo-led
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
