@@ -234,6 +234,7 @@ function refresh_leds() {
 }
 
 $(document).ready(function() {
+	//$.ajaxSetup({cache:false});
 	load_leds();
 	timer = setTimeout(refresh, 1000);
 	refresh();

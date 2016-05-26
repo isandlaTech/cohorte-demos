@@ -4,7 +4,7 @@
     {
         "name" : "pelix-http-service",
         "properties" : {
-            "pelix.http.port" : 9999
+            "pelix.http.port" : 80
         }
     }
     ]

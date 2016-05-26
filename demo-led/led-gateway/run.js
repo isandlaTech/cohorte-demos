@@ -21,6 +21,7 @@
         "name": "led-gateway",
         "web-admin": 40000,
         "recomposition-delay": 120,
-        "shell-admin": 9001
+        "shell-admin": 9001,
+        "console": false
     }
 }

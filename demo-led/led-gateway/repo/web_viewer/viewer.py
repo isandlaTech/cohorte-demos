@@ -190,6 +190,7 @@ class Viewer(object):
         result = json.dumps(data, sort_keys=False,
                             indent=4, separators=(',', ': '))
         print(result)
+        response.set_header("cache-control", "no-cache")
         response.send_content(200, result, "application/json")
 
     """
@@ -219,6 +220,7 @@ class Viewer(object):
         if len(query) == 0:
             self.show_main_page(request, response)
         else:
+            #parts = str(query).split('?')[0].split('/')
             parts = str(query).split('/')
             if len(parts) == 0:
                 # show main page

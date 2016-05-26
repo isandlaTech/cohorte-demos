@@ -1,0 +1,13 @@
+[Unit]
+Description=Demo Led Service
+Requires=network.target
+After=dhcpcd.service
+
+[Service]
+Type=forking
+WorkingDirectory=/opt/led-gateway
+ExecStart=/opt/led-gateway/run_service
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
