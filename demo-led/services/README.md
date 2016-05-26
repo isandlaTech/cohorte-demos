@@ -8,18 +8,17 @@ This folder contains the services of each node of the application demo-led.
 
 1. Instructions for the .services files :
 ------------------------------------------
-There are two .services files for two Raspberry Pi using the systemd
+There are four .services files : One for the camera Raspberry, one for the Piface one, one for the cloud machine and one for the docker machine, using the systemd
 functionnality.
-One file for the camera Raspberry and one for the Piface one.
 
-In order to make these two nodes boot automatically on the system boot you have
+In order to make these four nodes boot automatically on the system boot you have
 to put the .service file in the /etc/systemd/system/ folder of the Rasperry
-filesystem.
+or the machine filesystem.
 Next, you need to enable the service at the boot. You can do that by typing the
 next command in the terminal :
 
-```sudo systemctl enable <name of the .service file>.
-Ex: sudo systemctl enable led-raspberry-piface-uno.service```
+```sudo systemctl enable <name of the .service file>.```
+```Ex: sudo systemctl enable led-raspberry-piface-uno.service```
 
 2. Instructions for led-raspberry-gpio :
 ----------------------------------------
