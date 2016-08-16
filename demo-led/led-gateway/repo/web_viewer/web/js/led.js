@@ -8,6 +8,7 @@
 var lastupdate = null;
 var leds = null;
 var cams = null;
+var prio = "";
 
 function set_led_on(led) {
 	console.log("actual state: ON")
@@ -20,6 +21,7 @@ function set_led_on(led) {
 			$('#led-time-response-'+led).html("<p>"+(fin-debut)+" ms</p>");
 			console.log(fin-debut);
 		}
+		$('#switcher-led-'+led).removeAttr("disabled");
 	});
 }
 
@@ -34,14 +36,17 @@ function set_led_off(led) {
 				$('#led-time-response-'+led).html('<p>'+(fin-debut)+' ms</p>');
 				console.log(fin-debut);
 			}
+			$('#switcher-led-'+led).removeAttr("disabled");
 	});
 }
 
 function take_cam_pic(cam) {
   	console.log("actual state: taking photo")
-		$('#photo-place-'+cam).html('<img id="photo-'+cam+'" class="photo fancybox" src="ajax-loader.gif"/>')
-  	$.getJSON( "/api/cams/"+cam+"/picture", function(){
-		}).done(function( data ) {
+		//$('#photo-place-'+cam).html('<img id="photo-'+cam+'" class="photo" src="ajax-loader.gif"/>')
+		$('#loader-'+cam).removeClass("hidden");
+  	$.getJSON( "/api/cams/"+cam+"/picture", function(data){
+			console.log("here1");
+			$('#loader-'+cam).addClass("hidden");
 			$('#photo-place-'+cam).html('<img id="photo-'+cam+'" class="photo recadre fancybox" src="data:image/png;base64,'+data['res']+'"/>' + '  </div>')
 			var addToAll = false;
 			var gallery = true;
@@ -58,11 +63,15 @@ function take_cam_pic(cam) {
 			$('a.fancybox').fancybox({
 					titlePosition: titlePosition
 			});
+		}).done(function(  ) {
+			console.log("here");
+			$('#switcher-cam-'+cam).removeAttr("disabled");
     });
 }
 
 function update_actions() {
 	$('.switch-input').on('change', function() {
+		$(this).attr("disabled", true);
 		$(this).attr('data-updating', "yes");
 		var led = $(this).attr('data-led');
 		var state = $(this).attr('data-state');
@@ -78,6 +87,7 @@ function update_actions() {
 
 function update_led_actions(led) {
 	led.on('change', function() {
+		led.attr("disabled", true);
 		led.attr('data-updating', "yes");
 		var state = led.attr('data-state');
 		var name = led.attr('data-led');
@@ -92,6 +102,7 @@ function update_led_actions(led) {
 
 function update_cams_actions() {
 	$('.switch-cam-input').on('click', function() {
+		$(this).attr("disabled", true);
 		$(this).attr('data-updating', "yes");
 		var state = $(this).attr('data-state');
 		var name = $(this).attr('data-cam');
@@ -110,6 +121,22 @@ function update_cam_actions(cam) {
 function refresh() {
 	var debut = new Date().getTime();
 	$.getJSON( "/api/lastupdate", function( data ) {
+		console.log(data);
+		console.log(prio);
+		if(data['prioritaire']=='yes' && (prio == "no" || prio == "")){
+			$('.switch-input').removeAttr("disabled");
+      $('.switch-cam-input').removeAttr("disabled");
+      $('#connexion-button-p').html("Connecté");
+      $('#connexion-button').attr('disable', 'true');
+			prio = "yes";
+		}
+		else if(data['prioritaire']=='no' && (prio == "yes" || prio == "")){
+      $('.switch-input').attr("disabled", true);
+      $('.switch-cam-input').attr("disabled", true);
+      $('#connexion-button-p').html("Non connecté");
+      $('#connexion-button').attr('disable', "false");
+			prio = "no";
+		}
 		var fin = new Date().getTime();
 		$('#ping-agregateur-p').html('Ping : '+(fin-debut)+' ms');
 		var tmp = data['lastupdate'];
@@ -150,7 +177,9 @@ function load_leds() {
             frame += '  	<div class="led-switcher">'
             frame += '    	<label id="switcher-zone" class="switch">'
             frame += '    	<input id="switcher-led-'+led_name+'" data-led="'+led_name+'" data-state="'+led_state+'" data-updating="no" type="checkbox" class="switch-input"'
-            if (led_state == "on")
+						if (prio == "no")
+                frame += '         disabled="disabled"'
+						if (led_state == "on")
                 frame += '         checked>'
             else
                 frame += '         >'
@@ -176,8 +205,12 @@ function load_leds() {
 	            frame += '  	<div class="cam-name">'+cam_name+'</div>'
             	frame += '  	<div class="cam-switcher">'
             	frame += '    	<label id="switcher-zone" class="button-switch">'
-					  	frame += '				<input type="button" id="switcher-cam-'+cam_name+'" data-cam="'+cam_name+'" data-state="'+cam_state+'" data-updating="no" class="switch-cam-input" value="Photo"/>'
-            	frame += '    	</label>'
+					  	frame += '				<input type="button" id="switcher-cam-'+cam_name+'" data-cam="'+cam_name+'" data-state="'+cam_state+'" data-updating="no" class="switch-cam-input" value="Photo"'
+							if (prio == "no")
+	                frame += '         disabled="disabled"/>'
+							else
+									frame += '         />'
+							frame += '    	</label>'
             	frame += '  	</div>'
 							frame += '  </div>'
 							frame += '	<div id="photo-place-'+cam_name+'" class="photo-place">'
@@ -185,6 +218,7 @@ function load_leds() {
 								frame += $('#photo-place-'+cam_name).html()
 							}
 							frame += '  </div>'
+							frame += '	<img id="loader-'+cam_name+'" class="loader hidden" src="ajax-loader.gif"/>'
 							frame += '</div>'
 	        }
 	        $('#cams-zone').html(frame);
@@ -215,7 +249,9 @@ function refresh_leds() {
 		            frame += '  <div class="led-switcher">'
 		            frame += '  <label id="switcher-zone" class="switch">'
 		            frame += '  <input id="switcher-led-'+name+'" data-led="'+name+'" data-state="'+led_state+'" data-updating="no" type="checkbox" class="switch-input"'
-		            if (led_state == "on")
+								if (prio == "no")
+		                frame += '         disabled="disabled"'
+								if (led_state == "on")
 		                frame += '         checked>'
 		            else
 		                frame += '         >'
@@ -233,8 +269,39 @@ function refresh_leds() {
     }
 }
 
-$(document).ready(function() {
-	//$.ajaxSetup({cache:false});
+$(document).ready(function(){
+  $('#connexion-button').on('click', function() {
+    if($('#connexion-button').attr('disable') == "false"){
+      $.fancybox('<div style="margin-top:20px;text-align: center;"><div style="margin: auto;display:block;"> <label style="display:inline;">Mot de passe : </label><input type="password" style="display:inline;" id="mdp"/></div><div style="margin:auto;display:block;"><button type="button" style="margin-top:20px;margin-left:auto;margin-right:auto;display:block;" id="co-button"> <p id="co-button-p" style="display:block;"> Connexion </p> </button><p style="margin-top:20px;display:block;" id="res-co-p"></p></div></div>', {
+		maxWidth	: 300,
+		maxHeight	: 150,
+		fitToView	: false,
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'yes',
+		closeEffect	: 'yes'
+	});
+      $('#co-button').on('click', function() {
+				if($('#mdp').val() == ""){
+					$('#res-co-p').html("Entrez un mot de passe");
+				}
+				else {
+					$.getJSON( "/api/connexion/"+$('#mdp').val(), function( data ) {
+	          if(data['prioritaire']=='yes'){
+	      			$('.switch-input').removeAttr("disabled");
+	            $('.switch-cam-input').removeAttr("disabled");
+	            $('#connexion-button-p').html("Connecté");
+	            $('#connexion-button').attr('disable', "true");
+	            $.fancybox.close(true);
+	      		}
+	          else{
+	            $('#res-co-p').html("Mauvais mot de passe");
+	          }
+	        });
+				}
+      });
+    }
+  });
 	load_leds();
 	timer = setTimeout(refresh, 1000);
 	refresh();

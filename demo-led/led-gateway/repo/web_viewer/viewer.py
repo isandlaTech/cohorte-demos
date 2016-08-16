@@ -6,6 +6,7 @@ import pelix.remote
 import os
 import json
 import time
+import uuid
 
 import logging
 _logger = logging.getLogger("viewer.viewer")
@@ -25,6 +26,8 @@ class Viewer(object):
         self._leds_list_lastupdate = time.time()
         self._cams = []
         self._cams_map = {}
+        self._uuid = None
+        self._time_uuid = 0
 
     def get_lastupdate(self):
         result = {"lastupdate" : self._leds_list_lastupdate}
@@ -209,6 +212,25 @@ class Viewer(object):
         (9) /leds/api/cams/CAMERA1
        (10) /leds/api/cams/CAMERA1/picture
         """
+
+        if((time.time() - self._time_uuid) > 3) :
+            self._uuid = None
+
+        cookie = request.get_header("Cookie")
+        uuid_var = str(uuid.uuid4())
+        if(cookie != None) :
+            uuid_var = str(cookie.split('=')[1])
+            if(uuid_var == self._uuid) :
+                self._time_uuid = time.time()
+                if((time.time() - self._time_uuid) > 800) :
+                    response.set_header("Set-Cookie", "sessionToken="+ uuid_var +"; Max-Age=900; path=/")
+        else:
+            response.set_header("Set-Cookie", "sessionToken="+ uuid_var +"; Max-Age=900; path=/")
+
+        if(self._uuid == None) :
+            self._time_uuid = time.time()
+            self._uuid = uuid_var
+
         query = request.get_path()
         # prepare query path: remove first and last '/' if exists
         while len(query) > 0 and query[0] == '/':
@@ -238,30 +260,68 @@ class Viewer(object):
                     if len(parts) == 2:
                         if str(parts[1]).lower() == "leds":
                             t = self.get_leds()
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                         elif str(parts[1]).lower() == "lastupdate":
                             t = self.get_lastupdate()
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                         elif str(parts[1]).lower() == "cams":
                             t = self.get_cams()
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                     elif len(parts) == 3:
                         if str(parts[1]).lower() == "leds":
                             led = str(parts[2]).lower()
                             t = self.get_led(led)
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                         elif str(parts[1]).lower() == "cams":
                             cam = str(parts[2]).lower()
                             t = self.get_cam(cam)
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
+                            self.sendJson(t, response)
+                        elif str(parts[1]).lower() == "connexion":
+                            mdp = str(parts[2])
+                            t = {}
+                            if(mdp=="isandla$38TECH"):
+                                self._uuid = uuid_var
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                     elif len(parts) == 4:
                         if str(parts[1]).lower() == "leds":
                             led = str(parts[2]).lower()
                             action = str(parts[3]).lower()
                             t = self.send_action(led, action)
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
                         elif str(parts[1]).lower() == "cams":
                             cam = str(parts[2]).lower()
                             action = str(parts[3]).lower()
                             t = self.send_action_cam(cam, action)
+                            if(self._uuid == uuid_var) :
+                                t["prioritaire"]="yes"
+                            else:
+                                t["prioritaire"]="no"
                             self.sendJson(t, response)
